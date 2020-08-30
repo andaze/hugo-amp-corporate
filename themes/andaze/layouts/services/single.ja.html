@@ -1,0 +1,31 @@
+{{define "js"}}
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-latest.js"></script>
+<script async custom-element="amp-recaptcha-input" src="https://cdn.ampproject.org/v0/amp-recaptcha-input-0.1.js"></script>
+{{end}}
+{{define "insert-body-first"}}
+
+{{partial "section-header-ani"}}
+
+{{end}}
+{{define "main"}}
+<ol class="breadcrumb cmxw">
+  {{- template "breadcrumb" (dict "node" . "start" .) }}
+</ol>
+<div class="service cmxw p2">
+  {{.Content}}
+
+  <div class='section-header'>
+    <div class='background-line'>
+      <div class="title-box">
+        <h2 class='section-title1_1 text-center sansserif'>MORE INFORMATION</h2>
+      </div>
+    </div>
+    <p class='section-title2 text-center'><span>詳細についてはお問い合わせください</span></p>
+    <amp-position-observer layout="nodisplay" on="enter:section-ani01.start" once></amp-position-observer>
+    <amp-position-observer layout="nodisplay" on="enter:section-ani02.start" once></amp-position-observer>
+    <amp-position-observer layout="nodisplay" on="enter:section-ani03.start" once></amp-position-observer>
+  </div>
+  {{partial "form-contact.ja"}}
+</div>
+{{end}}

@@ -1,0 +1,40 @@
+{{ $class := default "" (.Get "class") }}
+{{ $layout := default "responsive" (.Get "layout") }}
+
+{{ $scale := default 0.0 (.Get "scale") }}
+{{ $thumbnail := default "true" (.Get "thumbnail") }}
+{{ $thumbnail_width := default 320 (.Get "thumbnail_width") }}
+{{ $thumbnail_width = int $thumbnail_width }}
+{{ $src := .Get "src" }}
+
+{{ if $scale }}
+    {{ $scale = float $scale }}
+{{ end }}
+
+{{ $image := $.Page.Resources.GetMatch $src }}
+{{ $width := $image.Width }}
+{{ $height := $image.Height }}
+
+{{ with $image }}
+    {{ if eq $thumbnail "true" }}
+        {{ if $scale }}
+            {{ $width = mul $width $scale }}
+            {{ $width = int $width }}
+            {{ $image = $image.Resize (printf "%dx Lanczos" $width ) }}
+        {{ else }}
+            {{ $image = $image.Resize (printf "%dx Lanczos" $thumbnail_width ) }}
+        {{ end }}
+        {{ $src = $image.Permalink }}
+        {{ $width = $image.Width }}
+        {{ $height = $image.Height }}
+    {{ else if $scale }}
+        {{ $width = mul $width $scale }}
+        {{ $width = int $width }}
+        {{ $height = mul $height $scale }}
+        {{ $height = int $height }}
+    {{ end }}
+{{ end }}
+
+<amp-img src="{{ $src | relURL }}.webp" width="{{ $width }}" height="{{ $height }}" layout="{{ $layout }}" class="{{ $class }}">
+<amp-img fallback src="{{ $src | relURL }}" width="{{ $width }}" height="{{ $height }}" layout="{{ $layout }}" class="{{ $class }}"></amp-img>
+</amp-img>

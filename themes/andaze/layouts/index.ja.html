@@ -1,0 +1,185 @@
+{{define "js"}}
+{{end}}
+{{define "insert-body-first"}}
+
+{{partial "section-header-ani"}}
+
+{{end}}
+{{define "main"}}
+
+<div class="container prlx-float">
+  <div class="columns">
+    <div class="column col-3">
+      <amp-img src='{{ "/img/back-memo.png" | relURL }}.webp' width="510" height="289" layout="responsive" amp-fx="parallax" data-parallax-factor="1.5" class="">
+        <amp-img fallback src='{{ "/img/back-memo.png" | relURL }}' width="510" height="289"  layout="responsive" class=""></amp-img>
+      </amp-img>
+    </div>
+    <div class="column col-1">
+      <amp-img src='{{ "/img/back-loupe.png" | relURL }}.webp' width="231" height="167" layout="responsive" amp-fx="parallax" data-parallax-factor="1.15">
+        <amp-img fallback src='{{ "/img/back-loupe.png" | relURL }}' width="231" height="167" layout="responsive" class=""></amp-img>
+      </amp-img>
+    </div>
+    <div class="column col-1 col-ml-auto">
+      <amp-img src='{{ "/img/back-github.png" | relURL }}.webp' width="205" height="207" layout="responsive" amp-fx="parallax" data-parallax-factor="1.4" class="">
+        <amp-img fallback src='{{ "/img/back-github.png" | relURL }}' width="205" height="207" layout="responsive" class=""></amp-img>
+      </amp-img>
+    </div>
+    <div class="column col-3">
+      <amp-img src='{{ "/img/back-laptop.png" | relURL }}.webp' width="538" height="461" layout="responsive" amp-fx="parallax" data-parallax-factor="1.7" class="">
+        <amp-img fallback src='{{ "/img/back-laptop.png" | relURL }}' width="538" height="461"  layout="responsive" class=""></amp-img>
+      </amp-img>
+    </div>
+  </div>
+</div>
+
+
+{{.Content}}
+
+<!-- SERVICES -->
+{{$services := .GetPage "/services"}}
+<div class='section-header'>
+  <div class='background-line'>
+    <div class="title-box">
+      <span class='section-title1_1 text-center sansserif'>{{$services.Params.decorationTitle}}</span>
+    </div>
+  </div>
+  <h2 class='section-title2 text-center'><span>{{$services.Params.Title}}</span></h2>
+  <amp-position-observer layout="nodisplay" on="enter:section-ani01.start" once></amp-position-observer>
+  <amp-position-observer layout="nodisplay" on="enter:section-ani02.start" once></amp-position-observer>
+  <amp-position-observer layout="nodisplay" on="enter:section-ani03.start" once></amp-position-observer>
+</div>
+
+<div class="container prlx-float prlx-right prlx-translate1">
+  <div class="columns">
+    <div class="column col-2 col-md-4 col-ml-auto">
+      <amp-img src='{{ "/img/back-green.png" | relURL }}.webp' width="280" height="269" layout="responsive" amp-fx="parallax" data-parallax-factor="1.2" class="">
+        <amp-img fallback src='{{ "/img/back-green.png" | relURL }}' width="280" height="269"  layout="responsive" class=""></amp-img>
+      </amp-img>
+    </div>
+  </div>
+</div>
+
+<!-- TOP 8 -->
+{{$top8 := first 8 (where $services.Pages "Params.pickup" true)}}
+{{partial "service-cards" (dict "Pages" $top8)}}
+
+<div class="btn-area">
+  <a href='{{$services.Permalink | relURL}}' class='btn btn-more sansserif'>▶︎ MORE</a>
+
+  <div class="container prlx-float">
+    <div class="columns">
+      <div class="column col-3 col-md-4 col-mr-auto">
+        <amp-img src='{{ "/img/back-ring-note.png" | relURL }}.webp' width="403" height="340" layout="responsive" amp-fx="parallax" data-parallax-factor="1.3" class="">
+          <amp-img fallback src='{{ "/img/back-ring-note.png" | relURL }}' width="403" height="340"  layout="responsive" class=""></amp-img>
+        </amp-img>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- KNOW-HOW -->
+{{$knowhow := .GetPage "/know-how"}}
+<div class='section-header'>
+  <div class='background-line'>
+    <div class="title-box">
+      <span class='section-title1_1 text-center sansserif'>{{$knowhow.Params.decorationTitle}}</span>
+    </div>
+  </div>
+  <h2 class='section-title2 text-center'><span>{{$knowhow.Params.Title}}</span></h2>
+  <amp-position-observer layout="nodisplay" on="enter:section-ani01.start" once></amp-position-observer>
+  <amp-position-observer layout="nodisplay" on="enter:section-ani02.start" once></amp-position-observer>
+  <amp-position-observer layout="nodisplay" on="enter:section-ani03.start" once></amp-position-observer>
+</div>
+
+<div id='home-expertise'>
+  <div class="container prlx-float prlx-right hide-md">
+    <div class="columns">
+      <div class="column col-2 col-ml-auto">
+        <amp-img src='{{ "/img/back-dynamics.png" | relURL }}.webp' width="383" height="383" layout="responsive" amp-fx="parallax" data-parallax-factor="1.1" class="">
+          <amp-img fallback src='{{ "/img/back-dynamics.png" | relURL }}' width="383" height="383"  layout="responsive" class=""></amp-img>
+        </amp-img>
+      </div>
+    </div>
+  </div>
+  <div id='dynamics365' class='container'>
+    <div class="columns cmxw">
+      <div class="column col-auto col-md-2 show-md">
+        <amp-img src='{{ "/img/dynamics.png" | relURL }}.webp' width="3010" height="2307" layout="responsive">
+          <amp-img fallback src='{{ "/img/dynamics.png" | relURL }}' width="3010" height="2307" layout="responsive"></amp-img>
+        </amp-img>
+      </div>
+      <div class='column col-md-10 expertise-title'>
+        <a href='https://dynamics365.andaze.com/'><h3>Dynamics 365 で売上成果を出すための実践方法のすべて</h3></a>
+        <div class="columns">
+          <div class="column col-9 hide-md">
+            <p class='m0'>俗人的な営業手法に代わって、企業として長期の顧客関係を形成する施策を打ちましょう。Dynamics 365を活用するための、必要な知識とスキルを全て解説しています。売上と顧客満足を両立させ、右肩上がりの売上を目指します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container prlx-float hide-md">
+    <div class="columns">
+      <div class="column col-3 col-mr-auto">
+        <amp-img src='{{ "/img/back-indian.png" | relURL }}.webp' width="446" height="429" layout="responsive" amp-fx="parallax" data-parallax-factor="1.1" class="">
+          <amp-img fallback src='{{ "/img/back-indian.png" | relURL }}' width="446" height="429"  layout="responsive" class=""></amp-img>
+        </amp-img>
+      </div>
+    </div>
+  </div>
+
+  <div id='telework' class='container'>
+    <div class="columns cmxw">
+      <div class="column col-auto col-md-2 show-md">
+        <amp-img src='{{ "/img/indian.png" | relURL }}.webp' width="1400" height="1250" layout="responsive">
+          <amp-img fallback src='{{ "/img/indian.png" | relURL }}' width="1400" height="1250" layout="responsive"></amp-img>
+        </amp-img>
+      </div>
+      <div class='column col-md-10 expertise-title'>
+        <a><h3>インド式テレワーク実践のすべて</h3></a>
+        <div class="columns">
+          <div class="column col-9 hide-md col-ml-auto">
+            <p class='m0'>今春、パンデミックによるテレワークの導入により、働く人のおうち時間が充実した一方、姿が見えなくなった社員が「さぼってないか」と管理職は不安に苛まれるようになりました。そこで、形ばかりの報告書や、在籍確認の会議などの「監視活動」を熱心に行ったことから、管理する方も、される方も疲弊し、ますます成果の上がらない組織が出来上がる、という悪循環に陥っています。
+              本サイトでは、機能するテレワーク体制をつくるため、何に取り組むべきか、早くかつ安価な方法で実現できるノウハウを解説します。（2021年公開予定）</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container prlx-float prlx-right hide-md prlx-translate2">
+    <div class="columns">
+      <div class="column col-4 col-ml-auto">
+        <amp-img src='{{ "/img/back-keyboard.png" | relURL }}.webp' width="618" height="637" layout="responsive" amp-fx="parallax" data-parallax-factor="1.2" class="">
+          <amp-img fallback src='{{ "/img/back-keyboard.png" | relURL }}' width="618" height="637"  layout="responsive" class=""></amp-img>
+        </amp-img>
+      </div>
+    </div>
+  </div>
+
+  <div id='github' class='container'>
+    <div class="columns cmxw">
+      <div class="column col-auto col-md-2 show-md">
+        <amp-img src='{{ "/img/github.png" | relURL }}.webp' width="2728" height="2731" layout="responsive">
+          <amp-img fallback src='{{ "/img/github.png" | relURL }}' width="2728" height="2731" layout="responsive"></amp-img>
+        </amp-img>
+      </div>
+      <div class='column col-md-10 expertise-title'>
+        <a><h3>GITHUBソースコード公開</h3></a>
+        <div class="columns">
+          <div class="column col-9 hide-md">
+            <p class='m0'>HUGOにて開発したAMPコーポレートサイトフレームワークをGITHUBにて公開しています。技術的なご参考にされてください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="btn-area">
+  <a href='{{$knowhow.Permalink | relURL}}' class='btn btn-more sansserif'>▶︎ MORE</a>
+</div>
+
+{{end}}

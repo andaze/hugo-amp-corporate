@@ -1,0 +1,12 @@
+<div class='section-header {{.Get "class"}}'>
+  <div class='background-line'>
+    <div class="title-box">
+      {{with .Params.title1_1}}<span class='section-title1_1 text-center sansserif'>{{.}}</span>{{end}}
+      {{with .Params.title1_2}}<span class='section-title1_2 text-center sansserif'>{{.}}</span>{{end}}
+    </div>
+  </div>
+  {{with .Params.title2}}<h2 class='section-title2 text-center'><span>{{.}}</span></h2>{{end}}
+  <amp-position-observer layout="nodisplay" on="enter:section-ani01.start" once></amp-position-observer>
+  <amp-position-observer layout="nodisplay" on="enter:section-ani02.start" once></amp-position-observer>
+  <amp-position-observer layout="nodisplay" on="enter:section-ani03.start" once></amp-position-observer>
+</div>

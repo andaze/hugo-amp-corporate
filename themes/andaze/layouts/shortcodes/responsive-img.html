@@ -1,0 +1,44 @@
+{{/* レスポンシブイメージをビューポートによって切り替えるショートカット
+    * HUGOのイメージ処理をするので、元画像は解像度が必要
+    * 使用例：{{< responsive-img  src="sample.jpg" width="222" options="jpg" >}}
+    */}}
+
+{{/* パラメータの取得 */}}
+{{ $src := (.Get "src") }}
+{{ $srcimg := $.Page.Resources.GetMatch $src }}
+{{ $srcimg_width := $srcimg.Width }}
+{{ $srcimg_height := $srcimg.Height }}
+{{ $srcimg_ratio := div (float $srcimg_height) (float $srcimg_width) }} 
+{{ $width := int (default $srcimg.Width (.Get "width")) }}
+{{ $ratio := float (default $srcimg_ratio (.Get "ratio")) }}
+{{ $options := .Get "options" }}
+
+{{/* ＜注意＞画像高さは直接指定せず横幅×縦比率で算出 */}}
+{{ $height := int (mul $width $ratio) }}
+
+{{/* レティーナの最大画像サイズ */}}
+{{ $ratina_max := mul $width 2 }}
+
+{{/* srcset用のビューポート配列を作成。最大画像サイズより75%を5回乗じる */}}
+{{ $array := slice }}
+{{ $wcurrent := $ratina_max }}
+{{ range seq 4 }}
+    {{ $array = $array | append $wcurrent }}
+    {{ $wcurrent = int (mul $wcurrent 0.75) }}
+{{ end }}
+
+{{ $dict := dict }}
+{{ range $array }}
+    {{ $crop_prm := printf "%dx%d %s" . (int (mul . $ratio)) $options }}
+    {{ $crop_img := $srcimg.Fill $crop_prm }}
+    {{ $dict = merge $dict (dict (string .) $crop_img.RelPermalink) }}
+{{ end }}
+
+{{/* ＜技術メモ＞
+   * 1. dictをrangeすると出力順はソートされないので使うなarrayを使え
+   * 2. 引用： amp-imgタグのlayout属性を指定しない場合、画像は width/height のサイズ通りに表示されます。しかし、
+   *    layout="responsive" を指定すると、width/height はアスペクト比（縦横比）の算出にしか使われず、
+   *    表示サイズは親要素の横幅により決定されます。つまり、縦横比を保ちながら親要素の横幅いっぱいに表示されます。著者：@toku-hiro   
+   */}}
+<amp-img src='{{ index $dict (string $ratina_max) }}' width='{{ $width }}' height='{{ $height }}'  layout='responsive'
+srcset='{{ range $array }}{{ printf "\n%s %dw," (index $dict (string .)) . }}{{ end }}'></amp-img>

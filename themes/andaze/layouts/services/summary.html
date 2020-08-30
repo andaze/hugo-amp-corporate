@@ -1,0 +1,17 @@
+<div class='column col-3 col-md-4 col-sm-6'>
+  <div class='card'>
+    <a href='{{ .Permalink | relURL}}' class="d-block">
+      <div class='card-image'>
+        {{ if .Params.cardimg }}
+        <amp-img src='{{ (path.Join .File.Dir .Params.cardimg) | relLangURL}}' alt='' width='240' height='240' layout='responsive'>
+          <amp-img fallback src='{{ (path.Join .File.Dir .Params.cardimg) | relLangURL}}' alt='' width='240' height='240' layout='responsive'></amp-img>
+        </amp-img>
+        {{ end }}
+        {{if eq .Page.Params.New true}}<div class='card-badge sansserif'>NEW</div>{{end}}
+      </div>
+      <div class="card-header">
+      <h4 class="card-title">{{if eq .Site.Language.Lang "ja"}}{{.Title}} / {{.Page.Params.decorationTitle}}{{else}}{{ .Title }}{{end}}</h4>
+    </div>
+    </a>
+  </div>
+</div>

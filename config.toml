@@ -1,0 +1,87 @@
+baseURL = "https://www.andaze.com"
+languageCode = "ja-jp"
+title = "Andaze Site"
+theme = "andaze"
+defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = true
+disableHugoGeneratorInject = false
+hasCJKLanguage = true
+
+[params]
+  twitter = "https://twitter.com/AndazeD365"
+  facebook = "https://twitter.com/AndazeD365"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[languages]
+  [languages.ja]
+    languageName = "日本語"
+    weight = 10
+    title = "Andazeのページ"
+    [languages.ja.params]
+      companyName = "アンダーズ株式会社"
+      url    = "/en/"
+    [[languages.ja.menu.main]]
+      identifier = "dynamics"
+      url    = "https://dynamics365.andaze.com/"
+      name   = "Dynamics 365と実践方法のすべて"
+      parent = "ノウハウ"
+      weight = 1
+    [[languages.ja.menu.main]]
+      identifier = "github"
+      url    = ""
+      name   = "GITHUBソースコード公開"
+      parent = "ノウハウ"
+      weight = 2
+    [[languages.ja.menu.main]]
+      identifier = "telework"
+      url    = ""
+      name   = "インド式テレワーク実践のすべて"
+      parent = "ノウハウ"
+      weight = 3
+  [languages.en]
+    languageName = "English"
+    weight = 20
+    title = "Andaze Site"
+    [languages.en.params]
+      companyName = "Andaze Ltd."
+      url    = "/ja/"
+    [[languages.en.menu.main]]
+      identifier = "dynamics"
+      url    = "https://dynamics365.andaze.com/"
+      name   = "All of the best practices for generating sales results with Dynamics 365"
+      parent = "KNOW-HOW"
+      weight = 1
+    [[languages.en.menu.main]]
+      identifier = "github"
+      url    = ""
+      name   = "GITHUB source code released"
+      parent = "KNOW-HOW"
+      weight = 2
+    [[languages.en.menu.main]]
+      identifier = "telework"
+      url    = ""
+      name   = "All about Indian style telework practice"
+      parent = "KNOW-HOW"
+      weight = 3
+
+
+[[deployment.targets]]
+name = "Azure deployment"
+URL = "azblob://$web"
+
+[[deployment.matchers]]
+#  Cache static assets for 20 years.
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=630720000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=630720000, no-transform, public"
+gzip = false
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true

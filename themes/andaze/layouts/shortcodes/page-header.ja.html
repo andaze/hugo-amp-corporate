@@ -1,0 +1,4 @@
+<div class='page-header px1 py2 text-center txt-fx1{{with .Params.bgsrc}}py-2{{end}} {{.Get "class"}}' {{with .Params.bgsrc}} style='background-image: url({{. | relLangURL}});'{{end}}>
+  <p class='page-title1 sansserif m0 {{.Get "title-class"}}'><span>{{.Page.Params.decorationTitle}}</span></p>
+  <h1 class='page-title2 center'><span>{{with .Params.message}}{{.}}{{else}}{{.Page.Title}}{{end}}</span></h1>
+</div>

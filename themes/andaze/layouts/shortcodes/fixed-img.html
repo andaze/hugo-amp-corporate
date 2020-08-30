@@ -1,0 +1,36 @@
+{{/* 固定幅画像をレティーナ対応させるショートカット
+   * HUGOのイメージ処理をするので、元画像は解像度が必要
+   * 使用例：{{< fixed-img  src="sample.jpg" width="222" >}}
+   */}}
+
+{{/* パラメータの取得 */}}
+{{ $src := (.Get "src") }}
+{{ $srcimg := $.Page.Resources.GetMatch $src }}
+{{ $srcimg_width := $srcimg.Width }}
+{{ $srcimg_height := $srcimg.Height }}
+{{ $srcimg_ratio := div (float $srcimg_height) (float $srcimg_width) }} 
+{{ $width := int (default $srcimg.Width (.Get "width")) }}
+{{ $ratio := float (default $srcimg_ratio (.Get "ratio")) }}
+{{ $layout := .Get "layout" }}
+
+{{/* ＜注意＞画像高さは直接指定せず横幅×縦比率で算出 */}}
+{{ $height := int (mul $width $ratio) }}
+
+{{/* ＜暫定＞考えられる画像サイズ（指定幅の1/4からレティーナ2倍）*/}}
+{{ $wmax := mul $width 2 }}
+{{ $wmin := int (div $width 4) }}
+
+{{/* レティーナの倍率配列を作成 */}}
+{{ $array := slice 1 1.5 2 3 }}
+
+{{ $dict := dict }}
+{{ range $array }}
+    {{ $crop_prm := printf "%dx%d" (int (mul $width .)) (int (mul $height .)) }}
+    {{ $crop_img := $srcimg.Fill $crop_prm }}
+    {{ $dict = merge $dict (dict (string .) $crop_img.RelPermalink) }}
+{{ end }}
+
+{{/* ＜技術メモ＞dictをrangeすると出力順はソートされないので使うな */}}
+{{/* ＜HUGOバグ＞srcset中のprintfを一つにすると文字化けする */}}
+<amp-img src='{{ index $dict "1" }}' width='{{ $width }}' height='{{ $height }}'
+srcset='{{ range $array }}{{ printf "\n%s" (index $dict (string .)) }}{{ printf " %sx," (string .)}}{{ end }}'></amp-img>

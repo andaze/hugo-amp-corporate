@@ -1,0 +1,7 @@
+{{ if ne .Page.Pages nil }}
+  <ul>
+  {{ range after .count .Page.Pages }}
+    <li class="nav-link"><a href='{{.Permalink | relURL}}'>{{.Title}}</a>
+  {{ end }}
+  </ul>
+{{ end }}

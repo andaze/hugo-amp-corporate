@@ -1,0 +1,111 @@
+<div id="footerwrap">
+  <div class="to-top" >
+    <i class="icon icon-2x icon-arrow-up" on="tap:top.scrollTo('duration' = 375)" role="button" tabindex="100"></i>
+  </div>
+  <footer class="container fmxw px2">
+    <a href="/" class="">
+      <amp-img src="/img/andazeLogoHD.png.webp" width="110" height="33" layout="fixed" class="my0 mx-auto" alt="Andaze logo image">
+        <amp-img fallback src="/img/andazeLogoHD.png" width="110" height="33" layout="fixed" class="my0 mx-auto" alt="Andaze logo image"></amp-img>
+      </amp-img>
+    </a>
+    {{if ne .Page .Site.Home}}
+    <ol class="breadcrumb">
+      {{- template "breadcrumb" (dict "node" . "start" .) }}
+    </ol>
+    {{end}}
+
+    <div class="footer-main columns hide-md">
+      <div class="column">
+        {{$services := .GetPage "/services"}}
+        <header class="footer-setion-header">{{partial "alternativeTitle" $services}}</header>
+        {{$pagescount := len $services.Pages}}
+        {{$list1 := math.Ceil (div $pagescount 2.0)}}
+        {{partial "service-list1" (dict "count" $list1 "Page" $services)}}
+      </div>
+      <div class="column">
+        <header class="footer-setion-header"><br></header>
+        {{partial "service-list2" (dict "count" $list1 "Page" $services)}}
+      </div>
+      <div class="column">
+        {{$knowhow := .GetPage "/know-how"}}
+        <header class="footer-setion-header">{{$knowhow.Title}}</header>
+        <ul>
+          {{range .Site.Menus.main.ByWeight}}
+            {{if and .HasChildren (eq .Name $knowhow.Title)}}
+              {{ range .Children }}
+              <li class="nav-link pl2"><a href="{{.URL}}" class="">{{.Name}}</a>
+              {{ end }}
+            {{end}}
+          {{end}}
+        </ul>
+      </div>
+      <div class="column">
+        <header class="footer-setion-header">{{(.GetPage "/about-us").Title}}</header>
+        <ul>
+          {{$_page := .GetPage "/about-us"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
+          {{$_page := .GetPage "/careers"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
+          {{$_page := .GetPage "/contact-us"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
+        </ul>
+        <div class="sns-box">
+          <a href="{{$.Site.Params.facebook}}"><i class="icss-facebook d-inline-block mt-1"></i></a>
+          <a href="{{$.Site.Params.twitter}}"><i class="icss-twitter d-inline-block mt-1"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-mobile show-md">
+      <amp-accordion disable-session-states expand-single-section animate>
+        <section on='expand:AMP.setState({exp1: 1});collapse:AMP.setState({exp1: 0})'>
+          <header class="nav-link">
+            <div class="has-children">
+              {{partial "alternativeTitle" $services}}
+              <i [class]="'icon icon-arrow-' + (exp1==1 ? 'up' : 'down')" class="icon icon-arrow-down"></i>
+            </div>
+          </header>
+          {{partial "service-list-menu" (dict "count" $pagescount "Page" $services)}}
+        </section>
+        <section on='expand:AMP.setState({exp2: 1});collapse:AMP.setState({exp2: 0})'>
+          <header class="nav-link">
+            <div class="has-children">
+              {{$knowhow.Title}}
+              <i [class]="'icon icon-arrow-' + (exp2==1 ? 'up' : 'down')" class="icon icon-arrow-down"></i>
+            </div>
+          </header>
+          <div>
+            {{range .Site.Menus.main.ByWeight}}
+              {{if and .HasChildren (eq .Name $knowhow.Title)}}
+                {{ range .Children }}
+                <header class="nav-link pl2"><a href="{{.URL | relURL}}" target="_blank">{{.Name}}</a></header>
+                {{end}}
+              {{end}}
+            {{end}}
+          </div>
+        </section>
+      </amp-accordion>
+        {{$_page := .GetPage "/about-us"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{$_page.Title}}</a></div>
+        {{$_page := .GetPage "/careers"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a></div>
+        {{$_page := .GetPage "/contact-us"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a></div>
+    </div>
+    <div class="footer-sub columns mt1 pt2">
+      <div class="column">
+        {{$relPath := strings.TrimPrefix (printf "/%s/" .Language) .RelPermalink}}
+        <a id='language-link' href='{{ (printf "%s%s" $.Site.Params.Url $relPath) | relURL}}'><i class="icss-earth"></i>LANGUAGE</a>
+      </div>
+      <div class="column col-auto">
+        <div class="columns">
+          <div class="column">
+            <span class='copyright'>Copyright&copy;{{ now.Year }} Andaze Ltd. All rights reserved.</span>
+            {{$_page := .GetPage "/privacy-policy"}}<a href='{{$_page.Permalink | relURL}}' class='sub-link'>{{partial "alternativeTitle" $_page}}</a>
+            {{$_page := .GetPage "/terms"}}<a href='{{$_page.Permalink | relURL}}' class='sub-link'>{{partial "alternativeTitle" $_page}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="page-top-button">
+  <button id="page-top" on="tap:top.scrollTo('duration' = 375)"><i class="icon icon-arrow-up" aria-hidden="true"></i></button>
+</div>
+
+<div class="page-top-trigger">
+  <amp-position-observer on="enter:hide-page-top.start; exit:show-page-top.start" layout="nodisplay"></amp-position-observer>
+</div>

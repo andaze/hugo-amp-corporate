@@ -1,0 +1,11 @@
+<div class="container cmxw services">
+  <div class="columns">
+
+  {{ if ne .Pages nil }}
+    {{ range .Pages.ByWeight }}
+      {{ .Render "summary"}}
+    {{ end }}
+  {{ end }}
+
+  </div>
+</div>

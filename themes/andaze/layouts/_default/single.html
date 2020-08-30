@@ -1,0 +1,13 @@
+{{define "insert-body-first"}}
+
+{{partial "section-header-ani"}}
+
+{{end}}
+{{define "main"}}
+<ol class="breadcrumb cmxw">
+  {{- template "breadcrumb" (dict "node" . "start" .) }}
+</ol>
+<div class="cmxw">
+{{.Content}}
+</div>
+{{end}}

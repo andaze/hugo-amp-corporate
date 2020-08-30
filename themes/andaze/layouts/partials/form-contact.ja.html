@@ -1,0 +1,116 @@
+<form id="contactform" class="mx-auto" method="post" action-xhr='{{ "/api/contact" | relURL}}' on="submit-success:contactform.clear" custom-validation-reporting="interact-and-submit" target="_top">
+  <amp-recaptcha-input layout="nodisplay" name="reCAPTCHA_body_key" data-sitekey="6Ld7bAEVAAAAAFX7F-yhOg3qG06VmNHMxNSMpwub" data-action="reCAPTCHA_example_action"></amp-recaptcha-input>
+  <div class="columns">
+    <div class="column col-md-6 col-sm-12 form-group">
+      <label class="form-label require">姓</label>
+      <input id="姓" name="姓" type="text" class="form-input input-lg" placeholder=" " required>
+      <span visible-when-invalid="valueMissing" validation-for="姓">お名前を入力してください</span>
+    </div>
+    <div class="column col-md-6 col-sm-12 form-group">
+      <label class="form-label require">名</label>
+      <input id="名" name="名" type="text" class="form-input input-lg" placeholder=" " required>
+      <span visible-when-invalid="valueMissing" validation-for="名">お名前を入力してください</span>
+    </div>
+  </div>
+
+  <div>
+    <label class="form-label require">会社名</label>
+    <input id="会社名" name="会社名" type="text" class="form-input input-lg" placeholder=" " required>
+    <span visible-when-invalid="valueMissing" validation-for="会社名">会社名を入力してください</span>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label require">メールアドレス</label>
+    <input id="メールアドレス" name="メールアドレス" type="email" class="form-input input-lg" placeholder=" " required>
+    <span visible-when-invalid="valueMissing" validation-for="メールアドレス">メールアドレスを入力してください</span>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">電話番号</label>
+    <input id="電話番号" name="電話番号" type="tel" class="form-input input-lg" placeholder=" ">
+  </div>
+
+  <div class="columns">
+    <div class="column col-md-6 col-sm-12 form-group">
+      <label class="form-label require">部門</label>
+      <select id="部門" class="form-select select-lg" name="部門" required>
+        <option value>--選択してください--</option>
+        <option value="経営全般">経営全般</option>
+        <option value="営業">営業</option>
+        <option value="マーケティング・広報・企画">マーケティング・広報・企画</option>
+        <option value="情報システム">情報システム</option>
+        <option value="人事・総務">人事・総務</option>
+        <option value="その他">その他</option>
+      </select>
+      <span visible-when-invalid="valueMissing" validation-for="部門">部門を選択してください</span>
+    </div>
+
+    <div class="column col-md-6 col-sm-12 form-group">
+      <label class="form-label require">役職</label>
+      <select id="役職" class="form-select select-lg" name="役職" required>
+        <option value>--選択してください--</option>
+        <option value="経営者・役員">経営者・役員</option>
+        <option value="部長クラス">部長クラス</option>
+        <option value="課長・係長・主任クラス">課長・係長・主任クラス</option>
+        <option value="一般社員">一般社員</option>
+        <option value="個人">個人</option>
+        <option value="学生">学生</option>
+        <option value="その他">その他</option>
+      </select>
+      <span visible-when-invalid="valueMissing" validation-for="役職">役職を選択してください</span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">お問い合わせ内容</label>
+    <textarea class="form-input input-lg" name="お問い合わせ" rows="10"></textarea>
+  </div>
+
+  <div class="form-group text-center mt1">
+  <label class="form-label text-left" for="about-privacy-policy">個人情報利用について</label>
+<textarea class="form-input" id="about-privacy-policy" placeholder="Textarea" cols="" rows="5" readonly>
+1. 事業者の氏名又は名称
+　 アンダーズ株式会社
+2. 個人情報保護管理者（若しくはその代理人）の氏名又は職名、
+　 所属及び連絡先
+      個人情報保護管理者　管理部
+      連絡先：03-3230-0401
+3. 個人情報の利用目的
+　 採用応募者の個人情報は、弊社の人事採用活動（書類審査、面接、評価、応募者への連絡等）のために利用いたします。
+4. 個人情報の第三者への提供
+　 業務担当者又は担当候補者の紹介のために、氏名、所属、業務経歴書を、直接持参するか電子メール添付(パスワード付)で、当社取引先に提供します。
+5.個人情報取扱いの委託
+　 当社は事業運営上、前項利用目的の範囲に限って個人情報を外部に委託することがあります。この場合、個人情報保護水準の高い委託先を選定し、個人情報の適正管理・機密保持についての契約を交わし、適切な管理を実施させます。
+6. 個人情報の開示等の請求
+　 ご本人様は、当社に対してご自身の個人情報の開示等（利用目的の通知、開示、内容の訂正・追加・削除、利用の停止または消去、第三者への提供の停止）に関して、下記の当社問合わせ窓口に申し出ることができます。その際、当社はお客様ご本人を確認させていただいたうえで、合理的な期間内に対応いたします。
+  【お問合せ窓口】
+　　アンダーズ株式会社
+個人情報問合せ窓口
+〒102-0083 東京都千代田区麹町2-10-3 エキスパートオフィス1F
+TEL：03-6893-2121
+　　Mail：privacy@andaze.com
+　　受付時間：9:00～18:00
+　　（土・日曜日・祝日・年末年始は除く）
+7. 個人情報を提供されることの任意性について　
+　 ご本人様が当社に個人情報を提供されるかどうかは任意によるものです。 ただし、必要な項目をいただけない場合、適切な対応ができない場合があります。</textarea>
+    <label class="form-checkbox d-inline-block mt3 mb2">
+      <input id="個人情報利用" type="checkbox" name="個人情報利用" required>
+      <i class="form-icon"></i><a href='{{"/ja/privacy-policy/" | relURL}}' class="text-dark">個人情報利用に同意</a>
+    </label>
+    <div visible-when-invalid="valueMissing" validation-for="個人情報利用">個人情報利用に同意をチェックしてください</div>
+  </div>
+
+  <input type='hidden' name='lang' value='{{$.Site.Language.Lang}}'>
+
+  <div class="text-center">
+    <input name="submit-button" type="submit" value="▶︎　問い合わせる" class="btn my1 px3">
+    <div submitting>
+      <template type="amp-mustache">
+        送信中です。
+      </template>
+    </div>
+    <div submit-error>
+      <span class="text-error">送信に失敗しました。暫くしてからもう一度送信してください。</span>
+    </div>
+  </div>
+</form>
