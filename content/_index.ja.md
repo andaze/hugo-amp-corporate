@@ -11,7 +11,7 @@ menu:
 
 {{% content-box inner-class="text-center pt2 my4" %}}
 <b STYLE="font-size: 1.2rem; line-height:2.7rem">チャットボットから AI まで</br>
-”ビジネスを良くする” を</br>
+”ビジネスをもっと良くする” を</br>
 形にするシステム会社</b>
 {{% /content-box %}}
 
