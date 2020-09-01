@@ -1,5 +1,5 @@
 ---
-title: COSMOS DATABASE
+title: AZURE COSMOS DATABASE
 date: 2020-07-24T00:00:00+09:00
 draft: false
 cardimg: cosmos-thumb@2x.jpg

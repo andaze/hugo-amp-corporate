@@ -1,6 +1,6 @@
 ---
 decorationTitle: DEVEXPRESS
-title: UX重視型ウェブサイト開発
+title: UX重視型アプリケーション開発
 date: 2020-07-24T00:00:00+09:00
 draft: false
 cardimg: devexpress-thumb@2x.jpg
