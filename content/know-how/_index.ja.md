@@ -36,8 +36,8 @@ menu:
 
   </div>
     <div class='column col-10 col-sm-12'>
-      <a href='#'><h2 class='know-how-title'>インド式テレワーク実践のすべて</h2></a>
-      <p class='know-how-description'>今春、テレワークの導入により、働く人のおうち時間が充実した一方、姿が見えなくなった社員が「さぼってないか」と管理職は不安に苛まれるようになりました。そこで、形ばかりの報告書や、在籍確認の会議などの「監視活動」を熱心に行ったことから、管理する方も、される方も疲弊し、ますます成果の上がらない組織が出来上がる、という悪循環に陥っています。 本サイトでは、機能するテレワーク体制をつくるため、何に取り組むべきか、早くかつ安価な方法で実現できるノウハウを解説します。（2021年公開予定）</p>
+      <h2 class='know-how-title'>インド式テレワーク実践のすべて</h2>
+      <p class='know-how-description'>今春、テレワークの導入により、働く人のおうち時間が充実した一方、姿が見えなくなった社員が「さぼってないか」と管理職は不安に苛まれるようになりました。 本サイトでは、稼働と貢献の見える化について、早くかつ安価な方法で実現できるノウハウを解説します。（2021年公開予定）</p>
     </div>
   </div>
 </div>
@@ -51,7 +51,7 @@ menu:
 
   </div>
     <div class='column col-10 col-sm-12'>
-      <a ><h2 class='know-how-title'>GITHUBソースコード公開</h2></a>
+      <a href='https://github.com/andaze/'><h2 class='know-how-title'>GITHUBソースコード公開</h2></a>
       <p class='know-how-description'>HUGOにて開発したAMPコーポレートサイトフレームワークをGITHUBにて公開しています。技術的なご参考にされてください。</p>
     </div>
   </div>
