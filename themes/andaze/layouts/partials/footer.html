@@ -94,7 +94,7 @@
         <div class="columns">
           <div class="column">
             <span class='copyright'>Copyright&copy;{{ now.Year }} Andaze Ltd. All rights reserved.</span>
-            {{$_page := .GetPage "/privacy-policy"}}<a href='{{$_page.Permalink | relURL}}' class='sub-link'>{{partial "alternativeTitle" $_page}}</a>
+            {{$_page := .GetPage "/privacy"}}<a href='{{$_page.Permalink | relURL}}' class='sub-link'>{{partial "alternativeTitle" $_page}}</a>
             {{$_page := .GetPage "/terms"}}<a href='{{$_page.Permalink | relURL}}' class='sub-link'>{{partial "alternativeTitle" $_page}}</a>
           </div>
         </div>
