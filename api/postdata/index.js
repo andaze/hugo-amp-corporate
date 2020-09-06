@@ -38,7 +38,7 @@ module.exports = async function (context) {
 
         let referrer = context.req.headers.referer;
         let lang = fields.lang;
-        const redirectURL = new URL(lang + '/contact-us/thank-you', referrer);
+        const redirectURL = new URL(lang + '/contact/thank-you', referrer);
         context.res = {
             // status: 200, /* Defaults to 200 */
             body: { result: 'ok' },

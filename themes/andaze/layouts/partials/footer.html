@@ -4,8 +4,8 @@
   </div>
   <footer class="container fmxw px2">
     <a href="/" class="">
-      <amp-img src="/img/andazeLogoHD.png.webp" width="110" height="33" layout="fixed" class="my0 mx-auto" alt="Andaze logo image">
-        <amp-img fallback src="/img/andazeLogoHD.png" width="110" height="33" layout="fixed" class="my0 mx-auto" alt="Andaze logo image"></amp-img>
+      <amp-img src="/img/andazeLogoHD.png.webp" width="110" height="33" layout="fixed" class="my0 mx-auto">
+        <amp-img fallback src="/img/andazeLogoHD.png" width="110" height="33" layout="fixed" class="my0 mx-auto"></amp-img>
       </amp-img>
     </a>
     {{if ne .Page .Site.Home}}
@@ -40,11 +40,11 @@
         </ul>
       </div>
       <div class="column">
-        <header class="footer-setion-header">{{(.GetPage "/about-us").Title}}</header>
+        <header class="footer-setion-header">{{(.GetPage "/about").Title}}</header>
         <ul>
-          {{$_page := .GetPage "/about-us"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
+          {{$_page := .GetPage "/about"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
           {{$_page := .GetPage "/careers"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
-          {{$_page := .GetPage "/contact-us"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
+          {{$_page := .GetPage "/contact"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
         </ul>
         <div class="sns-box">
           <a href="{{$.Site.Params.facebook}}"><i class="icss-facebook d-inline-block mt-1"></i></a>
@@ -81,9 +81,9 @@
           </div>
         </section>
       </amp-accordion>
-        {{$_page := .GetPage "/about-us"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{$_page.Title}}</a></div>
+        {{$_page := .GetPage "/about"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{$_page.Title}}</a></div>
         {{$_page := .GetPage "/careers"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a></div>
-        {{$_page := .GetPage "/contact-us"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a></div>
+        {{$_page := .GetPage "/contact"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a></div>
     </div>
     <div class="footer-sub columns mt1 pt2">
       <div class="column">
@@ -94,7 +94,7 @@
         <div class="columns">
           <div class="column">
             <span class='copyright'>Copyright&copy;{{ now.Year }} Andaze Ltd. All rights reserved.</span>
-            {{$_page := .GetPage "/privacy-policy"}}<a href='{{$_page.Permalink | relURL}}' class='sub-link'>{{partial "alternativeTitle" $_page}}</a>
+            {{$_page := .GetPage "/privacy"}}<a href='{{$_page.Permalink | relURL}}' class='sub-link'>{{partial "alternativeTitle" $_page}}</a>
             {{$_page := .GetPage "/terms"}}<a href='{{$_page.Permalink | relURL}}' class='sub-link'>{{partial "alternativeTitle" $_page}}</a>
           </div>
         </div>
