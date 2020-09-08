@@ -18,7 +18,7 @@ menu:
 
 ### About us
 
-We provide consulting services to develop solutions centered around Microsoft products. We propose solutions to solve client issues while incorporating new technologies and the latest industry trends. Through deep understanding, tenacity, collaboration and know-how, we help our clients to get the best solution.
+Andaze offers consulting services to develop solutions build around mainly Microsoft products. Our proposals are designed to solve our clients’ challenges by tapping into new technologies and cutting-edge industry trends. Backed by deep understanding, dogged tenacity, collaborative approach and expert know-how, Andaze helps our clients capitalize on the solutions best suited for them.
 
 ### Job overview
 
