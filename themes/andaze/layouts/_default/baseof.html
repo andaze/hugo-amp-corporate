@@ -15,6 +15,9 @@
     {{- block "js" . }}
     {{- end }}
     <meta name="referrer" content="origin">
+    {{- if eq .Params.noindex true}}
+    <meta name=”robots” content=”noindex”>
+    {{- end}}
     <title>{{.Title}} | {{$.Site.Params.CompanyName}}</title>
     {{- if .Params.canonicalUrl }}
     <link rel="canonical" href="{{ .Params.canonicalUrl }}">

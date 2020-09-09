@@ -3,6 +3,7 @@ title: PRIVACY POLICY
 alternativeTitle: PRIVACY POLICY
 date: 2020-03-27T19:02:12+09:00
 draft: false
+noindex: true
 ---
 
 {{< page-header class="" title-class="" >}}
