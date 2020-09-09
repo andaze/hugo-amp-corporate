@@ -3,6 +3,11 @@
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-latest.js"></script>
 <script async custom-element="amp-recaptcha-input" src="https://cdn.ampproject.org/v0/amp-recaptcha-input-0.1.js"></script>
 {{end}}
+
+{{define "json-ld"}}
+{{- (partial "JSON-LD" .) }},
+{{end}}
+
 {{define "main"}}
 <ol class="breadcrumb cmxw">
   {{- template "breadcrumb" (dict "node" . "start" .) }}

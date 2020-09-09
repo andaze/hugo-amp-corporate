@@ -4,6 +4,7 @@ title: 個人情報保護方針
 alternativeTitle: プライバシー
 date: 2020-03-27T19:02:12+09:00
 draft: false
+noindex: true
 ---
 
 {{< page-header class="" title-class="" >}}

@@ -3,6 +3,7 @@ title: HOME
 date: 2020-07-13T01:46:15+09:00
 draft: false
 foundingDate: 2016-04-01
+description: 'From CHATBOT to AI \"Make your business better\" Shaping it with our technology'
 menu:
   main:
     weight: 10
