@@ -3,6 +3,20 @@
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-latest.js"></script>
 <script async custom-element="amp-recaptcha-input" src="https://cdn.ampproject.org/v0/amp-recaptcha-input-0.1.js"></script>
 {{end}}
+
+{{define "json-ld"}}
+<script type="application/ld+json">
+{
+  "@context" : "https://schema.org",
+  "@graph":[
+  {{- (partial "WebPage-json" .) | htmlUnescape | safeJS }},
+  {{- (partial "breadcrumb-json" .) | htmlUnescape | safeJS }},
+  {{- (partial "SiteNavigationElement-json" .) | htmlUnescape | safeJS }}
+  ]
+}
+</script>
+{{end}}
+
 {{define "insert-body-first"}}
 
 {{partial "section-header-ani"}}

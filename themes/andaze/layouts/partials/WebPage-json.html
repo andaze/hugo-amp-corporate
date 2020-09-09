@@ -1,0 +1,13 @@
+{
+  "@type" : "WebPage",
+  "@id": "{{.Permalink | absLangURL}}#webpage",
+  "url": "{{.Permalink | absLangURL}}",
+  "name": "{{.Title}}",
+  "description": "{{.Description}}",
+  "isPartOf": {
+    "@id": "{{$.Site.BaseURL}}#website"
+  },
+  "breadcrumb": {
+    "@id": "{{$.Site.BaseURL}}#breadcrumb"
+  }
+}

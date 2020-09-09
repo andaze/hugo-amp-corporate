@@ -1,0 +1,33 @@
+{{- $list := $.Site.Params.availableLanguage }}
+{{- $count := sub (len $list) 1 }}
+{
+  "@type" : "Corporation",
+  "@id": "{{$.Site.BaseURL}}#corporation",
+  "name": "{{$.Site.Params.CompanyName}}",
+  "description": "{{$.Site.Params.description}}",
+  "url": "{{.Permalink | absLangURL}}",
+  "logo": "{{"/img/andaze.png" | absURL }}",
+  "foundingDate": "{{$.Site.Params.FoundingDate}}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "{{$.Site.Params.address.addressCountry}}",
+    "postalCode": "{{$.Site.Params.address.postalCode}}",
+    "addressRegion": "{{$.Site.Params.address.addressRegion}}",
+    "addressLocality": "{{$.Site.Params.address.addressLocality}}",
+    "streetAddress": "{{$.Site.Params.address.streetAddress}}"
+  },
+    "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "{{$.Site.Params.contactpoint.email}}",
+    "telephone": "{{$.Site.Params.contactpoint.telephone}}",
+    "hoursAvailable": "{{$.Site.Params.contactpoint.hoursAvailable}}",
+    "availableLanguage": [
+      {{- range $index, $item := $list }}
+      {
+        "@type": "Language",
+        "name": "{{$item}}"
+      }{{if ne $index $count}}{{","}}{{end}}
+      {{- end}}
+    ]
+  }
+}
