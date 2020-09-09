@@ -53,8 +53,6 @@
     {{end}}
   </head>
   <body class="">
-    {{block "json-ld" .}}
-    {{ end }}
     {{block "insert-body-first" .}}
     {{end}}
     {{partial "backtotop.html" .}}
@@ -65,5 +63,7 @@
     {{end}}
     </main>
     {{partial "footer.html" .}}
+    {{block "json-ld" .}}
+    {{ end }}
   </body>
 </html>
