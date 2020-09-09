@@ -12,45 +12,45 @@
     <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-    {{ block "js" . }}
-    {{ end }}
+    {{- block "js" . }}
+    {{- end }}
     <meta name="referrer" content="origin">
     <title>{{.Title}} | {{$.Site.Params.CompanyName}}</title>
-    {{ if .Params.canonicalUrl }}
+    {{- if .Params.canonicalUrl }}
     <link rel="canonical" href="{{ .Params.canonicalUrl }}">
-    {{ else }}
+    {{- else }}
     <link rel="canonical" href="{{ .Permalink }}">
-    {{ end }}
-    {{ template "_internal/opengraph.html" . }}
+    {{- end }}
+    {{- template "_internal/opengraph.html" . }}
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    {{ $sass := resources.Get "css/main.scss" }}
-    {{ $style := $sass | toCSS | postCSS (dict "config" "postcss.config.js") | minify | fingerprint }}
-    {{ $spe := resources.Get "css/spectre.css" }}
-    {{ $spemin := $spe | minify | fingerprint }}
-    {{ $speiconmin := resources.Get "css/spectre-icons.css" | minify | fingerprint }}
-    {{ $iconicssmin := resources.Get "css/icss.css" | minify | fingerprint }}
-    {{ $homeiconmin := resources.Get "css/home.css" | minify | fingerprint }}
-    {{ $facebookiconmin := resources.Get "css/facebook.css" | minify | fingerprint }}
-    {{ $twittericonmin := resources.Get "css/twitter.css" | minify | fingerprint }}
-    {{ $earthiconmin := resources.Get "css/earth.css" | minify | fingerprint }}
-    {{ $mgnmin := resources.Get "css/margin.css" | minify | fingerprint }}
-    {{ $padmin := resources.Get "css/padding.css" | minify | fingerprint }}
+    {{- $sass := resources.Get "css/main.scss" }}
+    {{- $style := $sass | toCSS | postCSS (dict "config" "postcss.config.js") | minify | fingerprint }}
+    {{- $spe := resources.Get "css/spectre.css" }}
+    {{- $spemin := $spe | minify | fingerprint }}
+    {{- $speiconmin := resources.Get "css/spectre-icons.css" | minify | fingerprint }}
+    {{- $iconicssmin := resources.Get "css/icss.css" | minify | fingerprint }}
+    {{- $homeiconmin := resources.Get "css/home.css" | minify | fingerprint }}
+    {{- $facebookiconmin := resources.Get "css/facebook.css" | minify | fingerprint }}
+    {{- $twittericonmin := resources.Get "css/twitter.css" | minify | fingerprint }}
+    {{- $earthiconmin := resources.Get "css/earth.css" | minify | fingerprint }}
+    {{- $mgnmin := resources.Get "css/margin.css" | minify | fingerprint }}
+    {{- $padmin := resources.Get "css/padding.css" | minify | fingerprint }}
     <style amp-custom>
       /* any custom style goes here */
-      {{ $spemin.Content | safeCSS }}
-      {{ $speiconmin.Content | safeCSS }}
-      {{ $iconicssmin.Content | safeCSS }}
-      {{ $homeiconmin.Content | safeCSS }}
-      {{ $facebookiconmin.Content | safeCSS }}
-      {{ $twittericonmin.Content | safeCSS }}
-      {{ $earthiconmin.Content | safeCSS }}
-      {{ $mgnmin.Content | safeCSS }}
-      {{ $padmin.Content | safeCSS }}
-      {{ $style.Content | safeCSS }}
+      {{- $spemin.Content | safeCSS }}
+      {{- $speiconmin.Content | safeCSS }}
+      {{- $iconicssmin.Content | safeCSS }}
+      {{- $homeiconmin.Content | safeCSS }}
+      {{- $facebookiconmin.Content | safeCSS }}
+      {{- $twittericonmin.Content | safeCSS }}
+      {{- $earthiconmin.Content | safeCSS }}
+      {{- $mgnmin.Content | safeCSS }}
+      {{- $padmin.Content | safeCSS }}
+      {{- $style.Content | safeCSS }}
     </style>
-    {{if eq "en" .Site.Language.Lang}}
+    {{- if eq "en" .Site.Language.Lang}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    {{end}}
+    {{- end}}
   </head>
   <body class="">
     {{block "insert-body-first" .}}
