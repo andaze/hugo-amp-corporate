@@ -1,12 +1,21 @@
+{{- $parent := ""}}
+{{- if eq .Parent nil}}
+{{- $parent = printf "%s#website" $.Site.BaseURL}}
+{{- else}}
+{{- $parent = printf "%s#webpage" .Parent.Permalink}}
+{{- (partial "WebPage-json" .Parent) | htmlUnescape | safeJS }},
+{{- end}}
 {
   "@type" : "WebPage",
   "@id": "{{.Permalink | absLangURL}}#webpage",
   "url": "{{.Permalink | absLangURL}}",
   "name": "{{.Title}}",
   "description": "{{.Description}}",
+  {{- if ne .Parent nil}}
   "isPartOf": {
-    "@id": "{{$.Site.BaseURL}}#website"
+    "@id": "{{$parent}}"
   },
+  {{- end}}
   "breadcrumb": {
     "@id": "{{$.Site.BaseURL}}#breadcrumb"
   }

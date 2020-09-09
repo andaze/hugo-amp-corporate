@@ -3,12 +3,12 @@
   <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="mobile-menu show-md sansserif">☰ MENU</div>
   <nav class="navbar-center hide-md">
     <ul>
-{{$currentPageName := .Page.Params.menu.main.name}}
-{{$currentParent := .Page.Params.menu.main.parent}}
-{{range .Site.Menus.main.ByWeight}}
-  {{.Pre}}
+{{- $currentPageName := .Page.Params.menu.main.name}}
+{{- $currentParent := .Page.Params.menu.main.parent}}
+{{- range .Site.Menus.main.ByWeight}}
+  {{- .Pre}}
       <li class='nav-link {{if or (eq .Name $currentPageName) (eq .Identifier $currentParent)}}current{{end}}'><a href='{{.URL}}'>{{.Name}}</a>
-{{end}}
+{{- end}}
     </ul>
   </nav>
   <section class="navbar-section"></section>
@@ -20,11 +20,11 @@
   </div>
   <nav class="side-bar">
     <ul class="">
-      {{$counter := 0}}
-      {{ range .Site.Menus.main.ByWeight }}
-        {{if .HasChildren}}
-        {{$counter = add $counter 1}}
-        {{$expand := printf "side_exp%d" $counter}}
+      {{- $counter := 0}}
+      {{- range .Site.Menus.main.ByWeight }}
+        {{- if .HasChildren}}
+        {{- $counter = add $counter 1}}
+        {{- $expand := printf "side_exp%d" $counter}}
         <li class="nav-link">
           <amp-accordion disable-session-states animate>
             <section on='expand:AMP.setState({ {{$expand}}: 1});collapse:AMP.setState({ {{$expand}}: 0})'>
@@ -34,18 +34,18 @@
                 </div>
               </header>
               <div>
-                {{ range .Children }}
+                {{- range .Children }}
                 <li class="nav-link pl2"><a href="{{.URL}}" class="">{{.Name}}</a>
-                {{ end }}
+                {{- end }}
                 </div>
             </section>
           </amp-accordion>
         </li>
-        {{else}}
-          {{.Pre}}
+        {{- else}}
+          {{- .Pre}}
               <li class='nav-link {{if eq .Name $currentPageName}}current{{end}}'><a href='{{.URL}}'>{{.Name}}</a>
-        {{end}}
-      {{ end }}
+        {{- end}}
+      {{- end }}
     </ul>
   </nav>
 </amp-sidebar>
