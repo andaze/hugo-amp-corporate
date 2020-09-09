@@ -11,9 +11,11 @@
   "url": "{{.Permalink | absLangURL}}",
   "name": "{{.Title}}",
   "description": "{{.Description}}",
+  {{- if ne .Parent nil}}
   "isPartOf": {
     "@id": "{{$parent}}"
   },
+  {{- end}}
   "breadcrumb": {
     "@id": "{{$.Site.BaseURL}}#breadcrumb"
   }
