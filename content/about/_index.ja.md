@@ -4,6 +4,7 @@ title: アンダーズとは
 alternativeTitle: 会社概要
 date: 2020-07-24T19:02:12+09:00
 draft: false
+description: "世界中のITテックプロダクトを活用しユーザーとのコミュニケーションによって製品を作り上げる次世代型開発会社。常識を変えるプロダクトをつくる「アンダーズ」をご体感ください。"
 menu:
   main:
     weight: 20

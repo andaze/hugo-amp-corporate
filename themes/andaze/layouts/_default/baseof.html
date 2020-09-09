@@ -21,17 +21,6 @@
     {{ else }}
     <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "corporation",
-        "name":"Andaze",
-        "url":"https://www.andaze.com",
-        "knowsLanguage": ["jp","en"],
-        "foundingDate": "{{ .Params.FoundingDate }}",
-        "logo": "{{"/img/andaze.png" | absURL }}"
-      }
-    </script>
     {{ template "_internal/opengraph.html" . }}
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     {{ $sass := resources.Get "css/main.scss" }}
@@ -64,6 +53,8 @@
     {{end}}
   </head>
   <body class="">
+    {{block "json-ld" .}}
+    {{ end }}
     {{block "insert-body-first" .}}
     {{end}}
     {{partial "backtotop.html" .}}
