@@ -15,8 +15,7 @@ menu:
 <div amp-fx="fade-in" data-duration="500ms">
 
 {{% content-box inner-class="center-box text-center message mt2" %}}
-<b>Experience our brilliance</b></br>
-Andaze is a next-generation developer, which builds ground-breaking products from tech products the world over to create solutions that satisfy users’ needs we uncover in close communication with our clients.
+Experience our brilliance. Andaze is a next-generation developer, which builds ground-breaking products from tech products the world over to create solutions that satisfy users’ needs we uncover in close communication with our clients.
 {{% /content-box %}}
 
 </div>
