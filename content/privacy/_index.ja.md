@@ -5,6 +5,7 @@ alternativeTitle: プライバシー
 date: 2020-03-27T19:02:12+09:00
 draft: false
 noindex: true
+description: "アンダーズ株式会社は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。"
 ---
 
 {{< page-header class="" title-class="" >}}
