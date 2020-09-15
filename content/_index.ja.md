@@ -16,7 +16,7 @@ menu:
 形にするシステム会社</b>
 {{% /content-box %}}
 
-{{% content-box inner-class="text-center" %}}
+{{% content-box inner-class="text-center cmxw2" %}}
 {{< responsive-img src="reception.jpg" width="1008" ratio="0.45" >}}
 {{% /content-box %}}
 
