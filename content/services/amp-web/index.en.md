@@ -49,13 +49,13 @@ We will quickly build an AMP site with the **AMP Framework**. Please contact our
 
 ## Case
 
-**Site**: [Our corporate website](https://www.andaze.com/)
+**Site**: Our corporate website https://andaze.com/
 
 **Issue**: Originally built with Wordpress, there was a problem with access speed from mobile
 
 **Solution**: Built on the same AMP page for both desktop and mobile **Built on standalone AMP**.
 
-**Reference**: [AMP checker](https://search.google.com/test/amp) If you enter the URL of our company's corporate site, you can check the AMP validity judgment by Google. You can see that the function was realized with the standalone AMP.
+**Reference**: [AMP checker](https://search.google.com/test/amp) If you enter the URL of our company's corporate site, you can check the AMP validity judgment by Google. You can see that the function was realized with the standalone AMP
 
 {{%/ content-box %}}
 
