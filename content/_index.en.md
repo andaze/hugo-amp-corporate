@@ -12,11 +12,9 @@ menu:
 
 {{% content-box inner-class="text-center pt3 my4" %}}
 <b STYLE="font-size: 1.2rem; line-height:2.7rem">
-Andaze creates solutions</br>
-to enhance your business,</br>
-tapping into various technologies</br>
-ranging from chatbots to AI
-</b>
+Andaze makes your business strong</br>
+by using Azure technologies</br>
+from Chatbots to AI</b>
 {{% /content-box %}}
 
 {{% content-box inner-class="text-center" %}}
@@ -28,5 +26,5 @@ ranging from chatbots to AI
 {{% /content-box %}}
 
 {{% content-box inner-class="center-box text-center" %}}
-Andaze is Microsoft Gold Certified - this means Andaze satisfies all competencies required by Microsoft Gold Partnership, the most rigorous of all Microsoft partners. Explore our work that leverages IT technologies from around the globe for our solutions.
+Andaze is Microsoft Gold Certified, satisfying the most rigorous requirements of the tech giant’s partnership programs.
 {{% /content-box %}}
