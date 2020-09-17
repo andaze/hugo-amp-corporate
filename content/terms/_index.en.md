@@ -17,7 +17,7 @@ noindex: true
 {{% content-box class="mt2 pb2 message px2" %}}
 Content usage conditions
 
-**Andaz Co., Ltd.'s corporate site and related sites (hereinafter referred to as "this site") are operated by Andaz Co., Ltd. (hereinafter referred to as "the Company") or its agent. In using this site, it is assumed that you have agreed to the following conditions of use. **
+**Andaze Ltd corporate site and related sites (hereinafter referred to as "this site") are operated by Andaze Ltd. (hereinafter referred to as "the Company") or its agent. In using this site, it is assumed that you have agreed to the following conditions of use.**
 
 ### Change of terms of use
 
@@ -30,7 +30,7 @@ The copyright of the works posted on this site belongs to the Company, except fo
 ### Prohibited matter
 
 The following acts are prohibited even when using with the prior consent of our document or when using the information posted on this site by private use or any other method explicitly recognized by law To do.
- 
+
 Actions that infringe or may infringe property or privacy of a third party or our company.
 
 b. Any act that causes or may cause disadvantage or damage to a third party or the Company.

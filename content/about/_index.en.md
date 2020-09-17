@@ -29,15 +29,15 @@ Andaze is a next-generation developer, which builds ground-breaking products fro
 {{% content-box inner-class="message" %}}
 Andaze has upheld three principles as our mottos since our inception.
 
-<b>1. Solve business challenges</b>
+<b>1. Solving customers' business challenges</b>
 
-Andaze offers solutions to your business challenges. We propose systems that are most effective for you, based on our experience of devising solutions for customers in a wide range of businesses.
+We make it our mission to help you strengthen your business. Based on our rich experience in various industries and solutions, we propose a system that can be effectively implemented.
 
-<b>2. Design systems that are easy to maintain and manage</b>
+<b>2. Manufacturing with an eye on maintenance and operation</b>
 
-Nowadays, the world is inundated with great tech products. If you jump at them, though, they can prove problematic in a long run in terms of management, cost and compatibility. Andaze helps you choose the right products to build a user-oriented system from the viewpoints of system owners and admin users.
+Nowadays, The world is full of great IT products. However, have you ever had trouble with maintenance, cost and compatibility after you have introduced them? We create systems from the standpoint of both the system owner and users, with an eye to future hassle and cost.
 
-<b>3. Select from world-class products</b>
+<b>3. Global curation</b>
 
 Our technical team is made up of members from India and other countries, and we are constantly gathering and proving technologies and concepts at a global level. We use superior materials to assemble a system that allows users to "get a good experience" of value.
 
