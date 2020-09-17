@@ -20,8 +20,8 @@ menu:
 
   </div>
     <div class='column col-10 col-sm-12'>
-      <a href='https://dynamics365.andaze.com/'><h2 class='know-how-title'>All of the best practices for generating sales results with Dynamics 365</h2></a>
-      <p class='know-how-description'>Let's take measures to form long-term customer relationships as a company, instead of the folly sales method. All the necessary knowledge and skills to use Dynamics 365 are explained. We aim to increase sales by balancing sales and customer satisfaction.</p>
+      <a href='https://dynamics365.andaze.com/'><h2 class='know-how-title'>All of the practices for achieving sales results with Dynamics 365</h2></a>
+      <p class='know-how-description'>Instead of snobbish sales tactics, take measures to form long term customer relationships as a company, and we'll walk you through all the knowledge and skills you'll need to leverage Dynamics 365. Balance sales and customer satisfaction and aim for a steady increase in sales.</p>
     </div>
   </div>
 </div>
@@ -35,8 +35,8 @@ menu:
 
   </div>
     <div class='column col-10 col-sm-12'>
-      <a href='#'><h2 class='know-how-title'>All about Indian style telework practice</h2></a>
-      <p class='know-how-description'>This spring, with the introduction of telework, while the working hours of workers have been enriched, the employees who are no longer able to see themselves have become worried about the lack of management. Therefore, since they enthusiastically carried out “surveillance activities” such as informal reports and meetings to confirm enrollment, both the manager and those who are being exhausted are exhausted, and an organization that will not achieve even better results will be created. We are in a vicious circle. This site explains what you should do to create a functioning telework system, and know-how that can be realized in a quick and inexpensive way. (To be released in 2021)</p>
+      <a href='#'><h2 class='know-how-title'>All about Indian-style telework practices.</h2></a>
+      <p class='know-how-description'>This spring, the introduction of telework has given workers more time at home, but managers are now worried that employees who are no longer visible are "slacking off". This website explains how to visualize availability and contribution in a fast and inexpensive way. (To be published in 2021.)</p>
     </div>
   </div>
 </div>
@@ -50,8 +50,8 @@ menu:
 
   </div>
     <div class='column col-10 col-sm-12'>
-      <a ><h2 class='know-how-title'>GITHUB source code released</h2></a>
-      <p class='know-how-description'>The AMP corporate site framework developed by HUGO is available on GITHUB. Please use it as a technical reference.</p>
+      <a ><h2 class='know-how-title'>GITHUB source code open to the public</h2></a>
+      <p class='know-how-description'>AMP Corporate Site Framework developed at HUGO is now available on GITHUB. Please use it as a technical reference.</p>
     </div>
   </div>
 </div>
