@@ -12,6 +12,7 @@ disableKinds = ["taxonomyTerm"]
   unsafe = true
 
 [params]
+  ga_measurement_id = "UA-108052915-1"
   twitter = "https://twitter.com/AndazeD365"
   facebook = "https://twitter.com/AndazeD365"
   foundingDate = "2016-04-01T00:00:00+09:00"
