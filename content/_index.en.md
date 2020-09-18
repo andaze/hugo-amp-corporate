@@ -11,9 +11,12 @@ menu:
 ---
 
 {{% content-box inner-class="text-center pt3 my4" %}}
-<b STYLE="font-size: 1.2rem; line-height:2.7rem">From CHATBOT to AI</br>
-"Make your business better"</br>
-Shaping it with our technology</b>
+<b STYLE="font-size: 1.2rem; line-height:2.7rem">
+Andaze creates solutions</br>
+to enhance your business,</br>
+tapping into various technologies</br>
+ranging from chatbots to AI
+</b>
 {{% /content-box %}}
 
 {{% content-box inner-class="text-center" %}}
@@ -25,5 +28,5 @@ Shaping it with our technology</b>
 {{% /content-box %}}
 
 {{% content-box inner-class="center-box text-center" %}}
-Microsoft Gold Partner is the program with the strictest acquisition requirements in the Microsoft Partner system. Please experience the technology of "Andaze" that uses IT tech around the world to build products.
+Andaze is Microsoft Gold Certified - this means Andaze satisfies all competencies required by Microsoft Gold Partnership, the most rigorous of all Microsoft partners. Explore our work that leverages IT technologies from around the globe for our solutions.
 {{% /content-box %}}

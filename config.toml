@@ -37,7 +37,7 @@ disableKinds = ["taxonomyTerm"]
       addressLocality = "千代田区"
       streetAddress = "麹町2-10-3 エキスパートオフィス1F"
     [languages.ja.params.contactpoint]
-      email = "admin@andaze.com"
+      email = "contact-us@andaze.com"
       telephone = "03-3230-0401"
       hoursAvailable = "Mo-Fr 9:00-18:00"
     [[languages.ja.menu.main]]

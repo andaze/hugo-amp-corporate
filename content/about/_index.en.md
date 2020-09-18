@@ -15,11 +15,7 @@ menu:
 <div amp-fx="fade-in" data-duration="500ms">
 
 {{% content-box inner-class="center-box text-center message mt2" %}}
-Utilizing IT tech products around the world
-By communicating with the user
-Next-generation development company that makes products.
-Creating products that change common sense
-Please experience "Andaze".
+Experience our brilliance. Andaze is a next-generation developer, which builds ground-breaking products from tech products the world over to create solutions that satisfy users’ needs we uncover in close communication with our clients.
 {{% /content-box %}}
 
 </div>
@@ -31,26 +27,21 @@ Please experience "Andaze".
   <div class="column col-10 col-md-9">
 
 {{% content-box inner-class="message" %}}
-Here are three things that Andaz has consistently pursued since its inception.
+Andaze has upheld three principles as our mottos since our inception.
 
-**1. Solving management issues**
+<b>1. Solve business challenges</b>
 
-We offer our customers "solving business concerns".
-We will propose excellent realistic solutions from our rich experience in industries and solutions.
+Andaze offers solutions to your business challenges. We propose systems that are most effective for you, based on our experience of devising solutions for customers in a wide range of businesses.
 
-**2. Manufacturing with a view to actual operation**
+<b>2. Design systems that are easy to maintain and manage</b>
 
-The world is full of great IT products. However, if you're not careful, your system will be bogged down in terms of operation, cost, and compatibility. Andaz promises to make proposals for the future from the standpoint of the system owner and the users who actually operate the system.
+Nowadays, the world is inundated with great tech products. If you jump at them, though, they can prove problematic in a long run in terms of management, cost and compatibility. Andaze helps you choose the right products to build a user-oriented system from the viewpoints of system owners and admin users.
 
-**3. Global curation**
+<b>3. Select from world-class products</b>
 
-Andaz is a company founded by a representative who has studied IT overseas.
-A collection of technologies and concepts at a global level.
-Thorough verification of superior materials will create a system that allows the user to experience.
+Andaze, led by Mina Arai, who worked for tech companies outside of Japan before founding the company, knows everything about world-class technologies and concepts. We build systems that create excellent user experience using best-in-class products.
 
-The work gets more interesting when many people can benefit from technology and innovation.
-We Andaz will continue to run with your company toward such goals.
-
+We can make work so much more fun by bringing benefits of technologies and innovation to more people. With that belief, Andaze helps you achieve your goals every step of the way.
 {{% /content-box %}}
 
   </div>
