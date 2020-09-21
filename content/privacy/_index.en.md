@@ -16,7 +16,7 @@ noindex: true
 
 {{% content-box class="mt2 pb2 message px2" %}}
 
-Andaz Co., Ltd. promotes the protection of personal information by establishing a personal information protection policy as follows, establishing a mechanism for personal information protection, and making all employees aware of the importance of personal information protection and taking measures. I will do it.
+Andaze Ltd promotes the protection of personal information by establishing a personal information protection policy as follows, establishing a mechanism for personal information protection, and making all employees aware of the importance of personal information protection and taking measures. I will do it.
 
 ### Management of personal information
 
@@ -52,7 +52,7 @@ We will comply with Japanese laws and regulations and other norms that apply to 
 For inquiries regarding our handling of personal information, please contact the following.
 
 Expert Office 1F, 2-10-3 Kojimachi, Chiyoda-ku, Tokyo 102-0083
-Andaz Co., Ltd.
+Andaze Ltd.
 E-mail: admin@andaze.com
 
 {{% /content-box %}}

@@ -8,6 +8,7 @@ menu:
     weight: 30
     name: サービス
     identifier: services
+description: "アンダーズ株式会社のソリューションサービスのメニューについて説明します。"
 ---
 
 {{< page-header class="" title-class="" >}}

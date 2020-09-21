@@ -22,49 +22,49 @@ Andaze offers consulting services to develop solutions build around mainly Micro
 
 ### Job overview
 
-We are looking for highly technical and experienced consultants in Microsoft cloud solutions and technologies (such as Azure, Dynamics 365, Power BI). We will provide that knowledge and experience to our clients through requirements definition, design, technology implementation, and customer support. You need the ability to solve real-world customer business problems without having the goal of delivering a solution.
+We are looking for a technically savvy and experienced consultant with strong technical knowledge of Microsoft Cloud solutions and technologies (e.g. Azure, Dynamics 365, Power BI, etc.). You will provide this knowledge and experience to our clients through requirements definition, design, technology implementation and customer support. You must have the ability to solve real-world client business problems without the goal of delivering a solution.
 
-There are various management issues and needs of clients. We will work with related vendors and partners to build effective solutions. We provide clients with high quality support and manage projects and teams.
+Clients have different business challenges and needs. You will work with relevant vendors and partners to build effective solutions. You will be responsible for providing high quality support to our clients and managing projects and teams.
 
-### In particular
+### Specifically
 
-- Small to medium sized Azure and Dynamics 365 (CRM) project management
-- Meet with business and technical stakeholders to identify key business requirements and offer solutions beyond Dynamics 365
-- Propose to internal and client teams how to properly use native functions and customizations based on knowledge of Dynamics 365
-- Join with a team to develop and implement scopes, prerequisites, implementation plans and technical solution proposals to meet the project goals and long-term needs.
-- Leadership and management associated with the implementation of the project plan
-Build solutions by comparing and utilizing related third-party products and complementary products
-- Effective communication with clients, meeting facilitation, materials and samples, minutes
-- Migration support from other CRM systems such as Salesforce
-- Acquisition of projects by creating project plans, quotations, scopes and proposals
+- Management of small to mid-size Azure and Dynamics 365 (CRM) projects
+- Meet with business and technical stakeholders to identify key business requirements and propose solutions that go beyond Dynamics 365
+- Recommendations to internal and client teams on the appropriate use of native features and customization based on their knowledge of Dynamics 365
+- Participate with the team to develop and implement scope, assumptions, implementation plans and technical solution proposals to meet project goals and long term needs.
+- Leadership and management in the implementation of the project plan.
+- Building a solution that leverages and compares relevant third party and complementary products
+- Communicating effectively with clients, facilitating meetings, providing materials, samples and minutes
+- Support for migration from other CRM systems such as Salesforce
+- Prepare project plans, estimates, scopes and proposals to win projects.
 
 ### Required (MUST)
 
-- Project management experience (more than 5 years)
-- Experience in creating project functional specifications and technical specifications such as customization, data migration, system integration (3 years or more)
-- Work experience in Azure or Dynamics 365 implementation or operation/maintenance (3 years or more)
-- Basic programming knowledge of .NET, JavaScript, SQL Server
-- English ability (reading, writing, conversation)
+- Project management experience (5+ years)
+- At least 3 years of experience writing functional and technical specifications for projects, including customization, data migration and system integration
+- 3+ years of experience in Azure or Dynamics 365 implementation or operation and maintenance
+- Basic programming knowledge of .NET, JavaScript and SQL Server.
+- English language skills (reading, writing and speaking)
 
 ### Welcome (WANT)
 
-- Experience of consistently engaged in everything from project ordering to requirement definition, design, development, and introduction
-- Interest and knowledge about new technology
-- Professional qualification for related products
-- Master Microsoft products (eg Visual Studio, PowerBI, office365, SQL Server, DevOps, etc.)
+- Experience of being involved in the entire process from acceptance of an order to requirement definition, design, development and implementation
+- Interest in and knowledge of new technologies
+- Professional qualifications for related products
+- Proficiency with Microsoft products (e.g., Visual Studio, PowerBI, office365, SQL Server, DevOps, etc.)
 
 ### desired person
 
-- Those who can accept each other and respect each other
-- Ability to autonomously proceed with the project
-- Logic-based business analysis, insight, and proposal capabilities
-- Curious to challenge new things, obedientness and flexibility
-- Client-oriented orientation toward long-term success
+- People who accept others and respect each other
+- The ability to work on projects autonomously
+- Business analysis, insight and proposal skills based on logic
+- Curiosity, honesty and flexibility to try new things.
+- Client-oriented, long-term success orientation
 
 ### Workplace/working hours
 
-- Complete full flex system
-- Work-to-business ratio: less than 25%
+- Full Flexible System
+- Attendance/travel ratio: less than 25%
 
 <!-- li レンダリングバグ回避コメント↑ -->
 
@@ -76,31 +76,31 @@ Build solutions by comparing and utilizing related third-party products and comp
 
 ### Job overview
 
-We assist clients who are considering Microsoft cloud solutions with proposals and implementations. We will design and develop solutions that utilize Azure services, migrate data, and integrate legacy systems. Incorporate open source tools, automation and cloud resources to reduce repetitive tasks and streamline development on the platform. You can help design your application to take advantage of Azure features to reduce costs while improving performance and availability.
+Helping to propose and implement Microsoft cloud solutions for clients considering them; you will design and develop solutions leveraging Azure services, data migration and integration of legacy systems. You will incorporate open source tools, automation and cloud resources to reduce repetitive tasks and streamline development on the platform. You will help design applications to leverage Azure capabilities to reduce costs while improving performance and availability.
 
 ### Details
 
-We will efficiently utilize Azure and related products to realize optimized application development from system construction. Specifically, in the Azure environment, design, development/testing, operation, and member management are the main focus, but I may be involved from the planning and requirement definition stage.
+Utilizing Azure and related products efficiently, you will achieve optimized application development from system construction. Specifically, you will focus on design, development and testing, operations, and member management in an Azure environment, but you may also be involved in the planning and requirements definition stages.
 
 ### Required (MUST)
 
-- Development experience in .NET environment (3 years or more)
-- Experience in deploying business applications for enterprises using Microsoft products (2 years or more)
-- Experience as a sub-leader or team leader in a system development project (1 year or more)
-- English ability (literacy, no English allergies)
+- NET environment (3+ years)
+- At least 2 years of experience implementing enterprise applications utilizing Microsoft products
+- At least 1 year of experience as a sub-leader or team leader in system development projects
+- English language proficiency (reading, writing, no allergy to English)
 
 ### Welcome (WANT)
 
 - DevOps development experience
-- Agile development experience
-- Experience automating activities using Azure CLI or PowerShell interface
+- Experience in agile development
+- Experience with automating activities using the Azure CLI and PowerShell interface
 - Experience with Azure Infrastructure as a Service and Platform as a Service features
-- Experience with Microsoft 365 platform
+- Experience with the Microsoft 365 platform
 - Experience in systems, software and automation engineering
-- Experience with multi-threaded, big data, distributed cloud architectures and frameworks
-- Experience with Azure Platform as a Service workloads such as cognitive services
-- Architectural experience of Infrastructure as a Service feature leveraging Azure virtual machines and virtual machine scale sets
-- Experience managing and configuring Microsoft 365 workloads such as Exchange Online, SharePoint Online, Teams, as well as integration with Azure Active Directory
+- Experience with multi-threaded, big data and distributed cloud architectures and frameworks
+- Experience with Azure Platform as a Service workloads, such as cognitive services
+- Architectural experience with Infrastructure as a Service features that leverage Azure virtual machines and virtual machine scale sets
+- Experience managing and configuring Microsoft 365 workloads such as Exchange Online, SharePoint Online, Teams, etc. in addition to integrating with Azure Active Directory.
 
 <!-- li レンダリングバグ回避コメント↑ -->
 
@@ -109,13 +109,13 @@ We will efficiently utilize Azure and related products to realize optimized appl
 {{< section-header title1_1="BACKGROUND" >}}
 
 {{% content-box inner-class="message px2" %}}
-We provide IT consulting and implementation support to companies in a wide range of industries such as finance, broadcasting, and real estate. We have received many requests from the trust and achievements we have cultivated so far, but there are many cases in which we are unavoidable due to the lack of personnel. We have decided to increase the number of employees this time in order to further expand our business in response to the ever-increasing number of projects.
+We provide IT consulting and implementation support to companies in a wide range of industries, including finance, broadcasting and real estate. Although we have received many requests for our services due to the trust and track record we have built up over the years, there have been many cases where we have been forced to decline due to a lack of personnel. In order to further expand our business in response to the ever-increasing number of projects, we have decided to increase our staff.
 {{% /content-box %}}
 
 {{< section-header title1_1="APPLICATION">}}
 
 {{% content-box inner-class="message px2" %}}
-Please send your resume and resume to the email below. We will inform you of the interview date after screening the documents.
+Please send your resume to the email address below. We will inform you of your interview date after screening your application.
 
 careers@andaze.com
 {{% /content-box %}}

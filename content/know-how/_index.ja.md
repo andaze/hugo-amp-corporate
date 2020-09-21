@@ -8,6 +8,7 @@ menu:
   main:
     weight: 40
     name: ノウハウ
+description: "Microsoft 製品を中心としたソリューションに関するノウハウを公開します。"
 ---
 
 {{< page-header class="" title-class="" >}}

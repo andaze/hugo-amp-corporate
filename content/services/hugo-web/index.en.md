@@ -30,7 +30,7 @@ We will build a static website promptly with the **Static Site Generator HUGO**.
 
 ## Case
 
-**Site**: [Our corporate website](https://www.andaze.com/)
+**Site**: Our corporate website
 
 **Problem**: It was created with Wordpress, but access is slow, maintenance cost for version upgrade is high, there is a limit to security enhancement
 

@@ -3,7 +3,7 @@ title: ホーム
 date: 2020-07-13T01:46:15+09:00
 draft: false
 foundingDate: 2016-04-01
-description: "チャットボットから AI まで”ビジネスをもっと良くする” を形にするシステム会社"
+description: "アンダーズはチャットボットから AI まで「ビジネスをもっと良くする」を形にするシステム会社です。"
 menu:
   main:
     weight: 10
@@ -12,11 +12,11 @@ menu:
 
 {{% content-box inner-class="text-center pt2 my4" %}}
 <b STYLE="font-size: 1.2rem; line-height:2.7rem">チャットボットから AI まで</br>
-”ビジネスをもっと良くする” を</br>
+”ビジネスをもっと強くする” を</br>
 形にするシステム会社</b>
 {{% /content-box %}}
 
-{{% content-box inner-class="text-center" %}}
+{{% content-box inner-class="text-center cmxw2" %}}
 {{< responsive-img src="reception.jpg" width="1008" ratio="0.45" >}}
 {{% /content-box %}}
 
