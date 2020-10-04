@@ -29,6 +29,7 @@ disableKinds = ["taxonomyTerm"]
     title = "Andazeのページ"
     [languages.ja.params]
       companyName = "アンダーズ株式会社"
+      description = "アンダーズはチャットボットから AI まで「ビジネスをもっと良くする」を形にするシステム会社です。"
       url    = "/en/"
     [languages.ja.params.address]
       addressCountry = "JP"
@@ -64,6 +65,7 @@ disableKinds = ["taxonomyTerm"]
     title = "Andaze Site"
     [languages.en.params]
       companyName = "Andaze Ltd."
+      description = 'From CHATBOT to AI \"Make your business better\" Shaping it with our technology'
       url    = "/ja/"
     [languages.en.params.address]
       addressCountry = "JP"
