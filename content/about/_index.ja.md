@@ -32,7 +32,7 @@ menu:
   <div class="column col-10 col-md-9">
 
 {{% content-box inner-class="message" %}}
-アンダーズが創業以来、モットーとしてきた３つについて紹介します。
+アンダーズが創業以来、モットーとしてきた３つについて紹介します。3
 
 **1. お客様の経営課題を解決**
 
