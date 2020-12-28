@@ -16,7 +16,7 @@ pickup: true
 
 {{% content-box class="message" %}}
 
-Why is "database optimization" important? An increasing number of companies are using NoSQL to complement traditional RDBs to handle exponentially growing data, such as real-time analytics while holding large amounts of data.
+Why is "database optimization" important? An increasing number of companies are using NOSQL to complement traditional RDBs to handle exponentially growing data, such as real-time analytics while holding large amounts of data.
 
 So far we have used a database called RDBMS. The internal data structure was normalized, and it was necessary to refer to several master tables to display one screen.
 
