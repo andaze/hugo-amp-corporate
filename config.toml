@@ -29,7 +29,7 @@ disableKinds = ["taxonomyTerm"]
     title = "Andazeのページ"
     [languages.ja.params]
       companyName = "アンダーズ株式会社"
-      description = "チャットボットから AI まで「ビジネスをもっと強くする」をカタチにするシステム会社"
+      description = "チャットボットから AI まで”ビジネスをもっと強く”をカタチにするIT会社"
       url    = "/en/"
     [languages.ja.params.address]
       addressCountry = "JP"
