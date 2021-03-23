@@ -11,7 +11,7 @@ menu:
 ---
 
 {{% content-box inner-class="text-center pt2 my4" %}}
-<b STYLE="font-size: 1.2rem; line-height:2.7rem">チャットボットから AI まで</br>
+<b STYLE="font-size: 1.2rem; line-height:2.7rem">AI からビッグデータまで</br>
 ”ビジネスをもっと強く” を</br>
 カタチにする会社がアンダーズです。</b>
 {{% /content-box %}}
