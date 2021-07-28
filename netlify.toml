@@ -1,20 +1,20 @@
 [[redirects]]
   from = "/job/*"
-  to = "https://subsite.ameio.in/:splat"
+  to = "https://job.andaze.com/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/en/job/*"
-  to = "https://subsite.ameio.in/en/:splat"
+  to = "https://job.andaze.com/en/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/ja/job/*"
-  to = "https://subsite.ameio.in/ja/:splat"
+  to = "https://job.andaze.com/ja/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
@@ -22,21 +22,21 @@
 
 [[redirects]]
   from = "/dynamic365/*"
-  to = "https://subsite.ameio.in/:splat"
+  to = "https://job.andaze.com/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/en/dynamic365/*"
-  to = "https://subsite.ameio.in/en/:splat"
+  to = "https://job.andaze.com/en/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/ja/dynamic365/*"
-  to = "https://subsite.ameio.in/jp/:splat"
+  to = "https://job.andaze.com/jp/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
