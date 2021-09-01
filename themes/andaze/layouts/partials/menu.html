@@ -8,7 +8,7 @@
 {{- range .Site.Menus.main.ByWeight}}
   {{- .Pre}}
       <li class='nav-link {{if or (eq .Name $currentPageName) (eq .Identifier $currentParent)}}current{{end}}'>
-        {{ if eq .Name "CAREERS" }}
+        {{ if or (eq .Name "CAREERS") (eq .Name "採用情報") }}
           <a href='{{.URL}}' target="_blank">{{.Name}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img> </a>
         {{ else }}
           <a href='{{.URL}}'>{{ .Name }}</a>
@@ -50,7 +50,7 @@
         {{- else}}
           {{- .Pre}}
               <li class='nav-link {{if eq .Name $currentPageName}}current{{end}}'>
-                {{ if eq .Name "CAREERS" }} 
+                {{ if or (eq .Name "CAREERS") (eq .Name "採用情報") }} 
                   <a href='{{.URL}}'>
                     {{.Name}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img>
                   </a>
