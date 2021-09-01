@@ -1,7 +1,5 @@
 <header class="navbar p-fixed">
-  <section class="navbar-section">
-    <amp-img src="{{ `img/andazeLogoNew.png` | absURL }}" width="110" height="35" layout="fixed" class="my0 mx-auto"></amp-img>
-  </section>
+  <section class="navbar-section"></section>
   <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="mobile-menu show-md sansserif">☰ MENU</div>
   <nav class="navbar-center hide-md">
     <ul>
@@ -9,8 +7,14 @@
 {{- $currentParent := .Page.Params.menu.main.parent}}
 {{- range .Site.Menus.main.ByWeight}}
   {{- .Pre}}
-      <li class='nav-link {{if or (eq .Name $currentPageName) (eq .Identifier $currentParent)}}current{{end}}'><a href='{{.URL}}'>{{.Name}}</a>
-{{- end}}
+      <li class='nav-link {{if or (eq .Name $currentPageName) (eq .Identifier $currentParent)}}current{{end}}'>
+        {{ if eq .Name "CAREERS" }}
+          <a href='{{.URL}}' target="_blank">{{.Name}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img> </a>
+        {{ else }}
+          <a href='{{.URL}}'>{{ .Name }}</a>
+        {{ end }}
+      </li>
+  {{- end}}
     </ul>
   </nav>
   <section class="navbar-section"></section>
@@ -37,7 +41,7 @@
               </header>
               <div>
                 {{- range .Children }}
-                <li class="nav-link pl2"><a href="{{.URL}}" class="">{{.Name}}</a>
+                <li class="nav-link pl2"><a href="{{.URL}}" class="">{{.Name}}</a></li>
                 {{- end }}
                 </div>
             </section>
@@ -45,7 +49,15 @@
         </li>
         {{- else}}
           {{- .Pre}}
-              <li class='nav-link {{if eq .Name $currentPageName}}current{{end}}'><a href='{{.URL}}'>{{.Name}}</a>
+              <li class='nav-link {{if eq .Name $currentPageName}}current{{end}}'>
+                {{ if eq .Name "CAREERS" }} 
+                  <a href='{{.URL}}'>
+                    {{.Name}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img>
+                  </a>
+                {{ else }}
+                  <a href='{{.URL}}'>{{ .Name }}</a>
+                {{ end }}
+              </li>
         {{- end}}
       {{- end }}
     </ul>
