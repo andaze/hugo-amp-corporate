@@ -18,7 +18,7 @@ from Chatbots to AI</b>
 {{% /content-box %}}
 
 {{% content-box inner-class="text-center" %}}
-{{< responsive-img src="reception.jpg" width="1008" ratio="0.45" >}}
+{{< responsive-img src="reception.png" width="1008" ratio="0.45" >}}
 {{% /content-box %}}
 
 {{% content-box inner-class="text-center pt3" %}}
