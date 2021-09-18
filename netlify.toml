@@ -36,7 +36,7 @@
 
 [[redirects]]
   from = "/ja/dynamic365/*"
-  to = "https://wonderful-austin-506e6a.netlify.app/jp/:splat"
+  to = "https://wonderful-austin-506e6a.netlify.app/ja/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
