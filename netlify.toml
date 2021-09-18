@@ -22,21 +22,21 @@
 
 [[redirects]]
   from = "/dynamic365/*"
-  to = "https://job.andaze.com/:splat"
+  to = "https://focused-mirzakhani-4d90fa.netlify.app/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/en/dynamic365/*"
-  to = "https://job.andaze.com/en/:splat"
+  to = "https://focused-mirzakhani-4d90fa.netlify.app/en/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/ja/dynamic365/*"
-  to = "https://job.andaze.com/jp/:splat"
+  to = "https://focused-mirzakhani-4d90fa.netlify.app/jp/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
