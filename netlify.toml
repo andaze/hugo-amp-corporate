@@ -21,21 +21,21 @@
 
 
 [[redirects]]
-  from = "/dynamic365/*"
+  from = "/dynamics365/*"
   to = "https://dynamics365andaze.netlify.app/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
-  from = "/en/dynamic365/*"
+  from = "/en/dynamics365/*"
   to = "https://dynamics365andaze.netlify.app/en/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
-  from = "/ja/dynamic365/*"
+  from = "/ja/dynamics365/*"
   to = "https://dynamics365andaze.netlify.app/ja/:splat"
   status = 200
   force = true
