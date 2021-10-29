@@ -12,6 +12,7 @@
 {{ $width := int (default $srcimg.Width (.Get "width")) }}
 {{ $ratio := float (default $srcimg_ratio (.Get "ratio")) }}
 {{ $layout := .Get "layout" }}
+{{ $options := "webp" }}
 
 {{/* ＜注意＞画像高さは直接指定せず横幅×縦比率で算出 */}}
 {{ $height := int (mul $width $ratio) }}
@@ -25,7 +26,7 @@
 
 {{ $dict := dict }}
 {{ range $array }}
-    {{ $crop_prm := printf "%dx%d" (int (mul $width .)) (int (mul $height .)) }}
+    {{ $crop_prm := printf "%dx%d %s" (int (mul $width .)) (int (mul $height .)) $options }}
     {{ $crop_img := $srcimg.Fill $crop_prm }}
     {{ $dict = merge $dict (dict (string .) $crop_img.RelPermalink) }}
 {{ end }}
