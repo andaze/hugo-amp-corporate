@@ -9,7 +9,7 @@
   {{- .Pre}}
       <li itemprop="name" class='nav-link {{if or (eq .Name $currentPageName) (eq .Identifier $currentParent)}}current{{end}}'>
         {{ if or (eq .Name "CAREERS") (eq .Name "採用情報") }}
-          <a itemprop="url" href='{{.URL}}' target="_blank">{{.Name}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img> </a>
+          <a href='{{.URL}}' target="_blank">{{.Name}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img> </a>
         {{ else }}
           <a itemprop="url" href='{{.URL}}'>{{ .Name }}</a>
         {{ end }}
@@ -51,7 +51,7 @@
           {{- .Pre}}
               <li itemprop="name" class='nav-link {{if eq .Name $currentPageName}}current{{end}}'>
                 {{ if or (eq .Name "CAREERS") (eq .Name "採用情報") }} 
-                  <a itemprop="url" href='{{.URL}}'>
+                  <a href='{{.URL}}'>
                     {{.Name}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img>
                   </a>
                 {{ else }}
