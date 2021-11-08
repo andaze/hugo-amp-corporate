@@ -97,6 +97,7 @@ TEL：03-6893-2121
       <input id="個人情報利用" type="checkbox" name="個人情報利用" required>
       <i class="form-icon"></i><a href='{{"/ja/privacy/" | relURL}}' class="text-dark">個人情報利用に同意</a>
     </label>
+    <div data-netlify-recaptcha="true"></div>
     <div visible-when-invalid="valueMissing" validation-for="個人情報利用">個人情報利用に同意をチェックしてください</div>
   </div>
 
@@ -113,5 +114,4 @@ TEL：03-6893-2121
       <span class="text-error">送信に失敗しました。暫くしてからもう一度送信してください。</span>
     </div>
   </div>
-  <div data-netlify-recaptcha="true"></div>
 </form>
