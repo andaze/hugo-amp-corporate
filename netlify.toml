@@ -1,4 +1,11 @@
 [[redirects]]
+  from = "/careers"
+  to = "/job"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
   from = "/job/*"
   to = "https://job.andaze.com/:splat"
   status = 200
