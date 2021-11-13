@@ -1,7 +1,7 @@
 [[redirects]]
   from = "/careers"
   to = "/job"
-  status = 200
+  status = 302
   force = true
   headers = {X-From = "Netlify"}
 
