@@ -1,6 +1,5 @@
-<form name="contactForm" class="contact-form width-normal" action-xhr="/ja/contact/thank-you" method="post" data-netlify="true" data-netlify-recaptcha="true" target="_blank">
-  <input type="hidden" name="form-name" value="contactForm" />
-  <input type="hidden" name="subject" value="アンダーズ【公式】コーポレートサイトから問い合わせがありました"/>
+<form id="contactform" class="mx-auto" method="post" action-xhr='{{ "/api/contact" | relURL}}' on="submit-success:contactform.clear" custom-validation-reporting="interact-and-submit" target="_top">
+  <amp-recaptcha-input layout="nodisplay" name="reCAPTCHA_body_key" data-sitekey="6Ld7bAEVAAAAAFX7F-yhOg3qG06VmNHMxNSMpwub" data-action="reCAPTCHA_example_action"></amp-recaptcha-input>
   <div class="columns">
     <div class="column col-md-6 col-sm-12 form-group">
       <label class="form-label require">姓</label>
@@ -98,16 +97,13 @@ TEL：03-6893-2121
       <input id="個人情報利用" type="checkbox" name="個人情報利用" required>
       <i class="form-icon"></i><a href='{{"/ja/privacy/" | relURL}}' class="text-dark">個人情報利用に同意</a>
     </label>
-    <div style="text-align: -webkit-center;">
-      <div data-netlify-recaptcha="true"></div>
-    </div>
     <div visible-when-invalid="valueMissing" validation-for="個人情報利用">個人情報利用に同意をチェックしてください</div>
   </div>
 
   <input type='hidden' name='lang' value='{{$.Site.Language.Lang}}'>
 
   <div class="text-center">
-    <input name="submit-button" type="submit" id="Form-submit" value="▶︎　問い合わせる" class="btn my1 px3">
+    <input name="submit-button" type="submit" value="▶︎　問い合わせる" class="btn my1 px3">
     <div submitting>
       <template type="amp-mustache">
         送信中です。
