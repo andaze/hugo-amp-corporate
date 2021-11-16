@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/careers"
+  from = "/ja/careers"
   to = "/job"
   status = 302
   force = true
