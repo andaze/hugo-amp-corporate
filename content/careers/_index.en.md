@@ -6,6 +6,7 @@ menu:
   main:
     weight: 50
     name: "CAREERS"
+    url: "/en/job/"
 ---
 
 {{< page-header class="" title-class="" >}}

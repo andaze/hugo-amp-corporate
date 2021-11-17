@@ -1,6 +1,5 @@
-<form name="contactForm" class="contact-form width-normal" action-xhr="/en/contact/thank-you" method="post" data-netlify="true" data-netlify-recaptcha="true" target="_blank">
-  <input type="hidden" name="form-name" value="contactForm" />
-  <input type="hidden" name="subject" value="We received an inquiry from Andaze [official] corporate website."/>
+<form id="contactform" class="mx-auto" method="post" action-xhr='{{ "/api/contact" | relURL}}' on="submit-success:contactform.clear" custom-validation-reporting="interact-and-submit" target="_top">
+  <amp-recaptcha-input layout="nodisplay" name="reCAPTCHA_body_key" data-sitekey="6Ld7bAEVAAAAAFX7F-yhOg3qG06VmNHMxNSMpwub" data-action="reCAPTCHA_example_action"></amp-recaptcha-input>
   <div class="columns">
     <div class="column col-md-6 col-sm-12 form-group">
       <label class="form-label require">Last name</label>
@@ -88,7 +87,7 @@
       Andaze Co., Ltd.
       Personal information inquiry window
       Expert Office 1F, 2-10-3 Kojimachi, Chiyoda-ku, Tokyo 102-0083
-      TEL: 03-3230-0401
+      TEL: 03-6893-2121
       Mail: privacy@andaze.com
       Reception hours: 9:00 to 18:00
       (Excluding Saturdays, Sundays, public holidays, year-end and New Year holidays)
@@ -97,16 +96,13 @@
       <input id="個人情報利用" type="checkbox" name="個人情報利用" required>
       <i class="form-icon"></i><a href='{{"/en/privacy/" | relURL}}' class="text-dark">I agree with the personal information protection policy.</a>
     </label>
-    <div style="text-align: -webkit-center;">
-      <div data-netlify-recaptcha="true"></div>
-    </div>
     <div visible-when-invalid="valueMissing" validation-for="個人情報利用">Checkbox is required.</div>
   </div>
 
   <input type='hidden' name='lang' value='{{$.Site.Language.Lang}}'>
 
   <div class="text-center">
-    <input name="submit-button" type="submit" id="Form-submit" value="▶︎　Send" class="btn my1 px3">
+    <input name="submit-button" type="submit" value="▶︎　Send" class="btn my1 px3">
     <div submitting>
       <template type="amp-mustache">
         Sending...

@@ -1,0 +1,95 @@
+[[redirects]]
+  from = "/ja/careers"
+  to = "/ja/job"
+  status = 302
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/en/careers"
+  to = "/en/job"
+  status = 302
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/job/*"
+  to = "https://job.andaze.com/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/en/job/*"
+  to = "https://job.andaze.com/en/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/ja/job/*"
+  to = "https://job.andaze.com/ja/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+
+[[redirects]]
+  from = "/dynamics365/*"
+  to = "https://dynamics365andaze.netlify.app/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/en/dynamics365/*"
+  to = "https://dynamics365andaze.netlify.app/en/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/ja/dynamics365/*"
+  to = "https://dynamics365andaze.netlify.app/ja/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
+[context.production.environment]
+HUGO_VERSION = "0.83.1"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = "hugo --gc --minify --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.83.1"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.83.1"
+
+[context.branch-deploy]
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.83.1"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+
+
