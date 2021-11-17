@@ -1,13 +1,13 @@
 [[redirects]]
   from = "/ja/careers"
-  to = "/job/ja"
+  to = "/ja/job"
   status = 302
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/en/careers"
-  to = "/job/en"
+  to = "/en/job"
   status = 302
   force = true
   headers = {X-From = "Netlify"}
