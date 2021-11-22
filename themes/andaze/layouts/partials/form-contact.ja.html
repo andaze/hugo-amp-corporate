@@ -1,4 +1,4 @@
-<form name="contactForm" class="contact-form width-normal" action-xhr="/ja/contact/thank-you" method="post" data-netlify-recaptcha="true" data-netlify="true">
+<form name="contactForm" class="contact-form width-normal" action-xhr="/ja/contact/thank-you" method="post" data-netlify="true">
 
   <input type="hidden" name="form-name" value="contactForm" />
   <input type="hidden" name="subject" value="アンダーズ【公式】コーポレートサイトから問い合わせがありました"/>
@@ -99,9 +99,6 @@ TEL：03-3230-0401
       <input id="個人情報利用" type="checkbox" name="個人情報利用" required>
       <i class="form-icon"></i><a href='{{"/ja/privacy/" | relURL}}' class="text-dark">個人情報利用に同意します</a>
     </label>
-    <div style="text-align: -webkit-center;">
-      <div data-netlify-recaptcha="true"></div>
-    </div>
     <div visible-when-invalid="valueMissing" validation-for="個人情報利用">個人情報利用に同意をチェックしてください</div>
   </div>
 
