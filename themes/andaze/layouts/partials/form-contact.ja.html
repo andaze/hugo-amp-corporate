@@ -1,4 +1,7 @@
-<form name="contactForm" class="contact-form width-normal" action-xhr="/ja/contact/thank-you" method="post" data-netlify="true">
+<form name="contactForm" class="contact-form width-normal" action-xhr="/ja/contact/thank-you" method="post" netlify-honeypot="bot-field" data-netlify="true">
+  <p class="hidden">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
   <input type="hidden" name="form-name" value="contactForm" />
   <input type="hidden" name="subject" value="アンダーズ【公式】コーポレートサイトから問い合わせがありました"/>
   <div class="columns">
