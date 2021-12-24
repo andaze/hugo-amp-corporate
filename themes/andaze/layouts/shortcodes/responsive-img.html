@@ -11,7 +11,8 @@
 {{ $srcimg_ratio := div (float $srcimg_height) (float $srcimg_width) }} 
 {{ $width := int (default $srcimg.Width (.Get "width")) }}
 {{ $ratio := float (default $srcimg_ratio (.Get "ratio")) }}
-{{ $options := .Get "options" }}
+<!-- {{ $options := .Get "options" }} -->
+{{ $options := "webp" }}
 
 {{/* ＜注意＞画像高さは直接指定せず横幅×縦比率で算出 */}}
 {{ $height := int (mul $width $ratio) }}

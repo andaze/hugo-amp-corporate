@@ -1,20 +1,56 @@
 [[redirects]]
+  from = "/ja/careers"
+  to = "/ja/job"
+  status = 302
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/en/careers"
+  to = "/en/job"
+  status = 302
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
   from = "/job/*"
-  to = "https://subsite.ameio.in/:splat"
+  to = "https://job.andaze.com/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/en/job/*"
-  to = "https://subsite.ameio.in/en/:splat"
+  to = "https://job.andaze.com/en/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
-  from = "/jp/job/*"
-  to = "https://subsite.ameio.in/jp/:splat"
+  from = "/ja/job/*"
+  to = "https://job.andaze.com/ja/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+
+[[redirects]]
+  from = "/dynamics365/*"
+  to = "https://dynamics365andaze.netlify.app/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/en/dynamics365/*"
+  to = "https://dynamics365andaze.netlify.app/en/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/ja/dynamics365/*"
+  to = "https://dynamics365andaze.netlify.app/ja/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
