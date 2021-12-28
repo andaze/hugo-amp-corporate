@@ -40,6 +40,7 @@
     {{- $earthiconmin := resources.Get "css/earth.css" | minify | fingerprint }}
     {{- $mgnmin := resources.Get "css/margin.css" | minify | fingerprint }}
     {{- $padmin := resources.Get "css/padding.css" | minify | fingerprint }}
+    {{- $searchDesign := resources.Get "css/searchicon.css" | minify | fingerprint }}
     <style amp-custom>
       /* any custom style goes here */
       {{- $spemin.Content | safeCSS }}
@@ -52,6 +53,7 @@
       {{- $mgnmin.Content | safeCSS }}
       {{- $padmin.Content | safeCSS }}
       {{- $style.Content | safeCSS }}
+      {{- $searchDesign.Content | safeCSS }}
     </style>
     {{- if eq "en" .Site.Language.Lang}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
