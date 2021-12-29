@@ -10,7 +10,6 @@
       {{ $Scratch := newScratch}}
       {{ $Scratch.Set "indexImg" "" }}
 
-      {{ if eq (print .Kind) ("page")}}
         {{ if .Page.Params.cardimg }}
           {{ $path := print ($url) (.Page.Params.cardimg) }}
           {{ $Scratch.Set "indexImg" ($path) }}
@@ -20,7 +19,6 @@
         {{ $indexImg := $Scratch.Get "indexImg" }}
         
         {{- $.Scratch.Add "index" (dict "objectID" .File.UniqueID "title" .Title  "url" $url  "description" .Description "dir" .Dir "fuzzywordcount" .FuzzyWordCount "keywords" .Keywords "kind" .Kind "lang" .Lang "lastmod" .Lastmod.UTC.Unix "readingtime" .ReadingTime  "summary" .Summary  "wordcount" .WordCount "section" .Section "indexImg" $indexImg )}}
-      {{ end }}
     {{- end -}}
   {{- end -}}
 
@@ -29,7 +27,6 @@
       {{ $url:= .URL | absURL }}
       {{ $Scratch := newScratch}}
 
-      {{ if eq (print .Kind) ("page")}}
         {{ if .Page.Params.cardimg }}
             {{ $path := print ($url) (.Page.Params.cardimg) }}
             {{ $Scratch.Set "indexImg" ($path) }}
@@ -38,7 +35,6 @@
         {{ end }}
         {{ $indexImg := $Scratch.Get "indexImg" }}
         {{- $.Scratch.Add "index" (dict "objectID" .File.UniqueID "title" .Title  "url" $url  "description" .Description "dir" .Dir "fuzzywordcount" .FuzzyWordCount "keywords" .Keywords "kind" .Kind "lang" .Lang "lastmod" .Lastmod.UTC.Unix "readingtime" .ReadingTime  "summary" .Summary  "wordcount" .WordCount "section" .Section "indexImg" $indexImg )}}
-      {{ end }}
     {{- end -}}
   {{- end -}}
 
