@@ -90,7 +90,7 @@
 .search-menu-container ul li > ul li a{
     position: relative;
 }
-.search-menu-container ul li > ul li a:after {
+/* .search-menu-container ul li > ul li a:after {
     content: "";
     background: #d5c9ff;
     width: 7px;
@@ -100,4 +100,4 @@
     top: 52%;
     transform: translateY(-50%);
     position: absolute;
-}
+} */
