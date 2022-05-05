@@ -9,7 +9,7 @@ menu:
     weight: 70
     name: ワークライフバランス
 ---
-
+<div amp-fx="fade-in" data-duration="500ms" class='container' style="padding: 25px">
 <h1 class="text-center">アンダーズ株式会社　行動計画 </h1>
 
 仕事と家庭の両立が図れるように配慮し、子育てをバックアップできる企業を目指す為、行動計画を策定いたします。 
@@ -54,3 +54,4 @@ menu:
   <td width="90%">年間6日以上の取得率80％を目指す。年次有給休暇の取得率を調査し、年々 取得率のパーセンテージを上げていけるよう従業員に対して取得の促進を促す。 </td>
 </tr>
 </table>
+</div>

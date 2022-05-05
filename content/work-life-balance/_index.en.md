@@ -8,7 +8,7 @@ menu:
     weight: 70
     name: WORK LIFE BALANCE
 ---
-
+<div amp-fx="fade-in" data-duration="500ms" class='container' style="padding: 25px">
 <h1 class="text-center">Andaze Corporation Action Plan</h1>
 
 We will formulate an action plan in order to be a company that can provide backup for child rearing, taking into consideration the need to balance work and family life. 
@@ -52,3 +52,4 @@ We will formulate an action plan in order to be a company that can provide backu
   <td width="90%">Aim for an 80% vacation usage rate of at least 6 days per year. Survey the annual paid leave utilization rate and encourage employees to take their annual paid leave so that the percentage will increase year by year. </td>
 </tr>
 </table>
+</div>
