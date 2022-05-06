@@ -40,7 +40,7 @@ We will formulate an action plan in order to be a company that can provide backu
 </tr>
 </table>
 
-<p style="border: 1px solid black; padding-left: 10px">Aim to increase the rate of employees taking annual paid leave so that they can work in a more balanced manner to achieve a better work-life balance. (Aim for a 70% acquisition rate of at least 6 days per year) </p>
+<p style="border: 1px solid black; padding-left: 10px">Initiatives: Aim to increase the rate of employees taking annual paid leave so that they can work in a more balanced manner to achieve a better work-life balance. (Aim for a 70% acquisition rate of at least 6 days per year) </p>
 
 <table>
 <tr>
