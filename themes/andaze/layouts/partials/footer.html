@@ -43,7 +43,7 @@
         <header class="footer-setion-header">{{(.GetPage "/about").Title}}</header>
         <ul>
           {{- $_page := .GetPage "/about"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
-          {{- $_page := .GetPage "/job"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}" target="_blank">{{partial "alternativeTitle" $_page}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img> </a>
+          {{- $_page := .GetPage "/job"}}<li class="nav-link"><a href="/job/{{.Page.Lang}}" target="_blank">{{partial "alternativeTitle" $_page}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img> </a>
           {{- $_page := .GetPage "/contact"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
           {{- $_page := .GetPage "/work-life-balance"}}<li class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a>
         </ul>
@@ -83,7 +83,7 @@
         </section>
       </amp-accordion>
         {{- $_page := .GetPage "/about"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{$_page.Title}}</a></div>
-        {{- $_page := .GetPage "/job"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}" target="_blank">{{partial "alternativeTitle" $_page}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img> </a></div>
+        {{- $_page := .GetPage "/job"}}<div class="nav-link"><a href="/job/{{.Page.Lang}}" target="_blank">{{partial "alternativeTitle" $_page}} <amp-img src="{{ `img/new-tab.png` | absURL }}" width="18" height="18" style="top:4px;" layout="fixed" ></amp-img> </a></div>
         {{- $_page := .GetPage "/contact"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a></div>
         {{- $_page := .GetPage "/work-life-balance"}}<div class="nav-link"><a href="{{$_page.Permalink | relURL}}">{{partial "alternativeTitle" $_page}}</a></div>
     </div>
