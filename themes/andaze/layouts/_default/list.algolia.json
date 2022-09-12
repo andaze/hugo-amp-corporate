@@ -1,0 +1,42 @@
+{{/* Generates a valid Algolia search index 
+  Only Detail Page Index Genrate */}}
+
+{{- $.Scratch.Add "index" slice -}}
+{{- $section := $.Site.GetPage "section" .Section }}
+{{- range .Site.AllPages -}}
+  {{- if eq (print .Site.Language) ("ja") -}}
+    {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
+      {{ $url:= .URL | absURL }}
+      {{ $Scratch := newScratch}}
+      {{ $Scratch.Set "indexImg" "" }}
+
+        {{ if .Page.Params.cardimg }}
+          {{ $path := print ($url) (.Page.Params.cardimg) }}
+          {{ $Scratch.Set "indexImg" ($path) }}
+        {{ else }}
+          {{ $Scratch.Set "indexImg" (`images/demo.png` | absURL) }}
+        {{ end }}
+        {{ $indexImg := $Scratch.Get "indexImg" }}
+        
+        {{- $.Scratch.Add "index" (dict "objectID" .File.UniqueID "title" .Title  "url" $url  "description" .Description "dir" .Dir "fuzzywordcount" .FuzzyWordCount "keywords" .Keywords "kind" .Kind "lang" .Lang "lastmod" .Lastmod.UTC.Unix "readingtime" .ReadingTime  "summary" .Summary  "wordcount" .WordCount "section" .Section "indexImg" $indexImg )}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if eq (print .Site.Language) ("en") -}}
+    {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
+      {{ $url:= .URL | absURL }}
+      {{ $Scratch := newScratch}}
+
+        {{ if .Page.Params.cardimg }}
+            {{ $path := print ($url) (.Page.Params.cardimg) }}
+            {{ $Scratch.Set "indexImg" ($path) }}
+        {{ else }}
+          {{ $Scratch.Set "indexImg" (`images/demo.png` | absURL) }}
+        {{ end }}
+        {{ $indexImg := $Scratch.Get "indexImg" }}
+        {{- $.Scratch.Add "index" (dict "objectID" .File.UniqueID "title" .Title  "url" $url  "description" .Description "dir" .Dir "fuzzywordcount" .FuzzyWordCount "keywords" .Keywords "kind" .Kind "lang" .Lang "lastmod" .Lastmod.UTC.Unix "readingtime" .ReadingTime  "summary" .Summary  "wordcount" .WordCount "section" .Section "indexImg" $indexImg )}}
+    {{- end -}}
+  {{- end -}}
+
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

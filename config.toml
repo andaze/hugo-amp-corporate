@@ -11,6 +11,18 @@ disableKinds = ["taxonomyTerm"]
 [markup.goldmark.renderer]
   unsafe = true
 
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "date", "author", "permalink", "content"]
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
+
 [params]
   ga_measurement_id = "UA-108052915-1"
   twitter = "https://twitter.com/AndazeD365"
